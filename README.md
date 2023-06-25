@@ -54,8 +54,16 @@ the provided navigation menu. Explore the projects, check out my skills, downloa
 free to get in touch using the contact form.
 
 ### Deployment
-To deploy this portfolio Angular application, you can follow the steps mentioned in 
-the hosting platform section (e.g., Netlify, GitHub Pages) to publish your application as a static website.
+Deployment
+To deploy this portfolio Angular application on Netlify follow these steps: 
+
+1. Sign up for a free Netlify account at https://www.netlify.com/ if you haven't already. 
+2. On your Netlify dashboard, click on "New site from Git". 
+3. Choose your preferred Git provider (e.g., GitHub, GitLab, Bitbucket) and select your Angular project repository. 
+4. Configure the build settings, specifying the build command as ng build --prod and the publish directory as dist/<your-project-name>. 
+5. Click on "Deploy site" to start the deployment process. Netlify will automatically fetch your repository, build your Angular app, and deploy it. 
+6. Once the deployment is complete, Netlify will provide you with a unique URL for your hosted Angular app.
+
 
 ### Contributing
 Thank you for your interest in contributing to this portfolio Angular application. 
