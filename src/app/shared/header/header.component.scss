@@ -1,0 +1,24 @@
+.header_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_menu_block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.header_cv {
+  background-color: transparent;
+  padding: 6px 8px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid var(--main-black);
+  cursor: pointer;
+}

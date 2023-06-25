@@ -1,0 +1,12 @@
+.main_block {
+  height: calc(100vh - 150px);
+  padding: 80px 160px 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_section {
+  padding: 10vh 0;
+  display: flex;
+  flex: 1;
+}
