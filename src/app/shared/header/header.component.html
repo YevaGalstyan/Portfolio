@@ -1,16 +1,14 @@
 <div class="header_block">
-    <a href="/">
-        <img width="90" src="../../../assets/images/logo.png">
+    <a routerLink="home">
+        <h5>Yeva.</h5>
     </a>
 
     <div class="header_menu_block">
-        <a routerLink="/about"><h4>About</h4></a>
-        <a routerLink="/education"><h4>Education</h4></a>
-        <a routerLink="/work"><h4>Work</h4></a>
-        <a routerLink="/contact"><h4>Contact</h4></a>
-        <button matTooltip="Download my CV" class="header_cv">
-            <img width="24" src="assets/images/donwload.svg">
-            <h4>CV</h4>
-        </button>
+        <a class="menu_item" routerLink="/work"><span>{{localize.localize.work}}</span></a>
+        <a class="menu_item" routerLink="/education"><span>{{localize.localize.education}}</span></a>
+        <a class="menu_item" routerLinkActive="menu_item_active" routerLink="/memberships"><span>{{localize.localize.contact}}</span></a>
+<!--        <a class="header_cv" target="_blank" href="assets/files/CV_Yeva_Galstyan.pdf">-->
+<!--            <span>{{localize.localize.cv}}</span>-->
+<!--        </a>-->
     </div>
 </div>

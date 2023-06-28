@@ -1,0 +1,39 @@
+h1, h2, h3, h4, h5, h6, span, p {
+  font-family: "Nunito-Light Sans";
+}
+
+.footer_main_block {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-top: 1px solid var(--gray-100);
+
+  span {
+    color: var(--gray-500);
+  }
+}
+
+.footer_menu {
+  display: flex;
+  justify-content: space-between;
+
+  .footer_menu_block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.menu_item_active span {
+  color: var(--purple-500)
+}
+
+.all_rights {
+  display: flex;
+  gap: 3px;
+
+  .current_year {
+    color: var(--purple-500);
+  }
+}

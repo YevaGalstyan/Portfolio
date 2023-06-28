@@ -1,18 +1,27 @@
 @import "src/assets/styles/general";
+@import "src/assets/styles/common";
 
 * {
   padding: 0;
   margin: 0;
 }
 
-body {
-  --main-white: #F3F3F3;
-  --main-black: #181717;
-  --main-gray: #606060;
-  --secondary-blue: #2429AF;
+@font-face {
+  font-family: Nunito-Light Sans;
+  src: local('Nunito-Light'), url(assets/fonts/Nunito_Sans/static/NunitoSans_7pt-Light.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: Inconsolata-Regular;
-  src: local('Inconsolata-Regular'), url(assets/fonts/Inconsolata/static/Inconsolata-Light.ttf) format('truetype');
+  font-family: Nunito-Regular Sans;
+  src: local('Nunito-Regular'), url(assets/fonts/Nunito_Sans/static/NunitoSans_7pt-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Nunito-Medium Sans;
+  src: local('Nunito-Medium'), url(assets/fonts/Nunito_Sans/static/NunitoSans_7pt-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Nunito-Bold Sans;
+  src: local('Nunito-Bold'), url(assets/fonts/Nunito_Sans/static/NunitoSans_7pt-Bold.ttf) format('truetype');
 }

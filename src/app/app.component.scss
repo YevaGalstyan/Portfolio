@@ -1,12 +1,17 @@
+.body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
 .main_block {
-  height: calc(100vh - 150px);
-  padding: 80px 160px 70px;
+  width: var(--body-width);
   display: flex;
   flex-direction: column;
 }
 
 .main_section {
-  padding: 10vh 0;
+  padding: 64px 0 56px;
   display: flex;
   flex: 1;
 }

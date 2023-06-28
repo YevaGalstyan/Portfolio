@@ -1,9 +1,15 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {ILocalize} from './localize';
+import {localize} from './eng';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
-export class LocalizerService {
+export class LocalizeService {
 
-  constructor() { }
+    // Public
+    localize: ILocalize = localize;
+
+    constructor() {
+    }
 }

@@ -1,5 +1,8 @@
-h1, h2, h3, h4, h5, h6, span, p {
-  font-family: Inconsolata-Regular;
+@import "color_palette";
+
+body {
+  @include colorPalette;
+  --body-width: 770px
 }
 
 h1 {

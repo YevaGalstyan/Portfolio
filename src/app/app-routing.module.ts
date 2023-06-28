@@ -1,17 +1,23 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {AboutComponent} from './about/about.component';
-import {ProjectsComponent} from './projects/projects.component';
-import {EducationComponent} from './education/education.component';
-import {ContactComponent} from './contact/contact.component';
+
+// Components
+import {ProjectsComponent} from './components/projects/projects.component';
+import {EducationComponent} from './components/education/education.component';
+import {ContactComponent} from './components/contact/contact.component';
+import {HomeComponent} from './components/home/home.component';
+import {MembershipsComponent} from './components/memberships/memberships.component';
+import {ColophonComponent} from './components/colophon/colophon.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: 'about', pathMatch: 'full'},
+    {path: '', redirectTo: 'home', pathMatch: 'full'},
 
-    {path: 'about', component: AboutComponent},
+    {path: 'home', component: HomeComponent},
     {path: 'work', component: ProjectsComponent},
     {path: 'education', component: EducationComponent},
-    {path: 'contact', component: ContactComponent}
+    {path: 'contact', component: ContactComponent},
+    {path: 'memberships', component: MembershipsComponent},
+    {path: 'colophon', component: ColophonComponent},
 ];
 
 @NgModule({
