@@ -1,0 +1,45 @@
+.body_header_block {
+  gap: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal_img {
+  min-width: 224px;
+  overflow: hidden;
+  height: 224px;
+  border-radius: 50%;
+
+  img {
+    margin-top: -34px;
+  }
+}
+
+h6, a {
+  display: inline;
+}
+
+.link_block {
+  display: flex;
+  gap: 8px;
+
+  a {
+    padding: 8px 12px;
+  }
+
+  span {
+    font-family: "Nunito-Bold Sans";
+  }
+
+  .github_link {
+    color: var(--gray-700);
+  }
+
+  .telegram_link {
+    color: var(--blue-500);
+  }
+
+  .linkedIn_link {
+    color: var(--blue-600);
+  }
+}

@@ -12,6 +12,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { ColophonComponent } from './components/colophon/colophon.component';
 import {NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule} from 'ngx-google-analytics';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import {NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule} from 'ngx-goog
         SharedModule,
         BrowserAnimationsModule,
         NgxGoogleAnalyticsModule.forRoot('G-V8DGV3G31Z'),
-        NgxGoogleAnalyticsRouterModule
+        NgxGoogleAnalyticsRouterModule,
+        MatTooltipModule
     ],
     providers: [],
     bootstrap: [AppComponent]

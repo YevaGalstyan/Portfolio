@@ -1,31 +1,42 @@
 <div class="body_block">
     <div class="body_header">
         <h4>{{localize.localize.colophon + '.'}}</h4>
+
+        <!--Development copyrights-->
         <span>{{localize.localize.websiteDevelopment}}
             <span>{{localize.localize.websiteDesign}}
                 <span>{{localize.localize.lazarNikolov}}</span>
                 <span>{{localize.localize.websiteDesignLink}}</span>
                 <a href="https://www.figma.com/community/file/1014838147356550908" target="_blank">
-                    <span>{{ localize.localize.figma }}</span>
+                    <span>{{ localize.localize.figma + '. '}}</span>
                 </a>
             </span>
+             <span>{{localize.localize.websiteSourceCode}}
+                 <a href="https://github.com/YevaGalstyan/Portfolio" target="_blank">
+                     <span>{{localize.localize.github + '. '}}</span>
+                 </a>
+             </span>
         </span>
 
+        <!--Used tools-->
         <span>{{localize.localize.websiteLanguage}}
             <a href="https://angular.io/" target="_blank">
                 <span>{{localize.localize.angular}}</span>
             </a>
             <span>{{localize.localize.and}}</span>
             <span>{{ localize.localize.websiteDeployed }}</span>
-             <a href="https://www.netlify.com/" target="_blank">
-                <span>{{localize.localize.netlify + '.'}}</span>
+             <a href="https://vercel.com/" target="_blank">
+                <span>{{localize.localize.vercel + '.'}}</span>
             </a>
         </span>
 
-        <span>{{localize.localize.websiteSourceCode}}
-            <a href="https://github.com/YevaGalstyan/Portfolio" target="_blank">
-                <span>{{localize.localize.github}}</span>
+        <!--Analytics and cookies-->
+        <span>{{localize.localize.websiteUses}}
+            <a href="https://angular.io/" target="_blank">
+                <span>{{localize.localize.googleAnalytics}}</span>
             </a>
+            <span>{{localize.localize.compatibleRegulations}}</span>
+            <span>{{ localize.localize.usedCookies }}</span>
         </span>
 
     </div>

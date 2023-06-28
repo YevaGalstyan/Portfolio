@@ -1,6 +1,8 @@
 export interface ILocalize {
     // Common
     and: string;
+    copy: string
+    copied: string
 
     // Menu
     about: string;
@@ -10,13 +12,15 @@ export interface ILocalize {
     membership: string
     contact: string
     colophon: string
+    projects: string
 
     // CV
     cv: string
+    mail: string
+    yevaGalstyan: string
 
     // All rights reserved
     at: string
-    yevaGalstyan: string
     currentYear: string
 
     // Socials
@@ -27,7 +31,11 @@ export interface ILocalize {
 
     // Tools
     angular: string
-    netlify: string
+    vercel: string
+    googleAnalytics: string
+
+    // Names
+    inSource: string,
 
     // Info introductions
     websiteDevelopment: string
@@ -37,8 +45,21 @@ export interface ILocalize {
     websiteLanguage: string
     websiteDeployed: string
     websiteSourceCode: string
+    websiteUses: string
+    compatibleRegulations: string
+    usedCookies: string
 
-    introductionHeader: string
-    introductionSub: string
-    introductionInfo: string
+    openToDiscussion: string
+    checkOutMyCV: string
+    contactMe: string
+    contactMeWith: string
+    briefInformation: string
+
+
+    // About
+    IAmYevaGalstyan: string
+    myOccupation: string
+    workplace: string
+    myPosition: string
+    alsoWorking: string
 }

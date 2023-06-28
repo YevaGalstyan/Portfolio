@@ -3,6 +3,8 @@ import {ILocalize} from './localize';
 export const localize: ILocalize = {
     // Common
     and: ' and',
+    copy: 'copy',
+    copied: 'copied!',
 
     // Menu
     about: 'About',
@@ -12,14 +14,16 @@ export const localize: ILocalize = {
     contact: 'Contact',
     home: 'Home',
     colophon: 'Colophon',
+    projects: 'projects',
 
     // Cv
     cv: 'CV',
+    mail: 'eva.gal0908@gmail.com',
+    yevaGalstyan: 'Yeva Galstyan',
 
     // All rights reserved
     currentYear: '2023',
     at: '©',
-    yevaGalstyan: 'Yeva Galstyan',
 
     // Socials
     linkedin: 'Linkedin',
@@ -29,7 +33,11 @@ export const localize: ILocalize = {
 
     // Tools
     angular: 'Angular Framework ',
-    netlify: 'Netlify',
+    vercel: 'Vercel',
+    googleAnalytics: 'Google Analytics',
+
+    // Names
+    inSource: 'Insource.am',
 
     // Info introductions
     websiteDevelopment: 'This website is developed by Yeva Galstyan.',
@@ -39,8 +47,20 @@ export const localize: ILocalize = {
     websiteLanguage: 'The website has been developed using the',
     websiteDeployed: ' is deployed on ',
     websiteSourceCode: 'The source code is open source and can be found on ',
+    websiteUses: 'This website uses ',
+    compatibleRegulations: ', which is compatible with the different privacy regulations such as GDPR, CCPA, etc. ',
+    usedCookies: 'It does not use cookies, and it does not collect any personal data from the visitors either.',
 
-    introductionHeader: 'Hi, I’m Yeva Galstyan, Web Applications developer.',
-    introductionSub: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum id tellus non volutpat. Fusce laoreet elementum nisi non placerat. Donec feugiat venenatis nibh in viverra. Aenean consequat orci ligula, et ultrices risus imperdiet at. Pellentesque in sapien nisl.',
-    introductionInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum id tellus non volutpat. Fusce laoreet elementum nisi non placerat. Donec feugiat venenatis nibh in viverra. '
+    openToDiscussion: 'I am open to project suggestions, eager to engage in front-end discussions, and excited to share knowledge.',
+    contactMe: 'Get in touch ✉️',
+    contactMeWith: 'Don\'t hesitate to reach out to me at the following email address:',
+    checkOutMyCV:'Please feel free to look over my ',
+    briefInformation: ' to see a summary of my education and work history.',
+
+    // About
+    IAmYevaGalstyan: 'Hi, I’m Yeva Galstyan.',
+    myOccupation: 'I am a bachelor\'s degree holder in Computer Science and  a front-end engineer.',
+    workplace: ' I work at',
+    myPosition: ' as a front-end developer,',
+    alsoWorking: ' and I am also currently freelancing on multiple high-volume '
 }
