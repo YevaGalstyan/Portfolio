@@ -14,6 +14,13 @@ const routes: Routes = [
 
     {path: 'home', component: HomeComponent},
     {path: 'work', component: ProjectsComponent},
+
+    {
+        path: 'work',
+        loadChildren: () => import('./components/projects/projects.module').then(m => m.ProjectsModule)
+    },
+
+
     {path: 'education', component: EducationComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'memberships', component: MembershipsComponent},

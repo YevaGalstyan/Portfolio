@@ -1,0 +1,24 @@
+<div class="body_block">
+    <!--Professional Experience-->
+    <div class="body_header">
+        <h4 style="text-transform: capitalize">{{localize.localize.independentProject + '.'}}</h4>
+        <span>{{localize.localize.projectContributions}}</span>
+    </div>
+
+    <!--Projects-->
+    <div class="card_block">
+        <app-card
+                (cardClicked)="navigate('work/imperial')"
+                [imgUrl]="'/projects/trade_small.png'"
+                [cardHeader]="localize.localize.imperialCapital"
+                [cardInfo]="localize.localize.tradingServiceShort">
+        </app-card>
+
+        <app-card
+                (cardClicked)="navigate('work/med')"
+                [imgUrl]="'/projects/prok.png'"
+                [cardHeader]="localize.localize.medControl"
+                [cardInfo]="localize.localize.medControlServiceShort">
+        </app-card>
+    </div>
+</div>

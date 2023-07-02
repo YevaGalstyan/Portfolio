@@ -1,0 +1,10 @@
+<div class="card_item">
+    <img class="main_img" [src]="'assets/images/' + imgUrl">
+    <div class="card_info">
+        <div class="card_header">
+            <h6>{{cardHeader}}</h6>
+            <img (click)="cardClicked.emit(true)" width="20" src="assets/images/icons/openGray.svg">
+        </div>
+        <span>{{cardInfo}}</span>
+    </div>
+</div>

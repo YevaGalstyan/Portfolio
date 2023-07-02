@@ -1,0 +1,40 @@
+.card_item {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+
+  .main_img {
+    height: 220px;
+    max-width: 370px;
+  }
+
+  .card_info {
+    min-height: 77px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--gray-50);
+    padding: 12px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    .card_header {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    h6 {
+      color: var(--gray-700);
+      font-family: "Nunito-Bold Sans";
+    }
+
+    span {
+      color: var(--gray-500);
+      font-family: "Nunito-Light Sans";
+    }
+  }
+}
