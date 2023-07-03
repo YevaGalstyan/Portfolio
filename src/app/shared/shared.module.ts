@@ -5,18 +5,21 @@ import {FooterComponent} from './footer/footer.component';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CardComponent } from './card/card.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
+    ScrollToTopComponent
   ],
     exports: [
         HeaderComponent,
         FooterComponent,
-        CardComponent
+        CardComponent,
+        ScrollToTopComponent
     ],
   imports: [
     CommonModule,

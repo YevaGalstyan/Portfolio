@@ -15,12 +15,14 @@ export class ProjectsService {
         med: {
             name: this.localize.localize.medControl + ' / МЕД УПРАВЛЕНИЕ',
             date: '2022 ' + this.localize.localize.nov + ' - ' + this.localize.localize.present,
+            description: this.localize.localize.medControlService,
             link: 'https://app.med-upravlenie.ru/'
         },
 
         imperial: {
             name: this.localize.localize.imperialCapital,
             date: '2021 ' + this.localize.localize.may + ' - ' + '2021 ' + this.localize.localize.sep,
+            description: this.localize.localize.tradingService,
             link: 'https://imperialcg.com/'
         }
     };
@@ -34,4 +36,5 @@ export interface project {
     name: string
     date: string
     link: string
+    description: string
 }

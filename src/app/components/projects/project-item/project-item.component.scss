@@ -4,17 +4,20 @@
   flex-direction: column;
   padding-top: 48px;
 
+  h2 {
+    color: var(--gray-700);
+    font-family: "Nunito-Bold Sans";
+  }
+
+  span {
+    font-family: "Nunito-Light Sans";
+  }
+
   .project_header {
     display: flex;
     flex-direction: column;
 
-    h2 {
-      cursor: pointer;
-      font-family: "Nunito-Bold Sans";
-    }
-
     span {
-      font-family: "Nunito-Light Sans";
       color: var(--gray-500);
     }
   }
@@ -28,4 +31,26 @@
       color: var(--purple-500)
     }
   }
+
+  .project_body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+
+    span {
+      color: var(--gray-700);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+.back_navigate {
+  cursor: pointer;
+  font-family: "Nunito-Light Sans";
+  color: var(--purple-500);
 }

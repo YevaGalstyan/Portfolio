@@ -118,18 +118,3 @@
   gap: 30px;
   flex-wrap: wrap;
 }
-
-.back_navigate {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-
-  span {
-    font-family: "Nunito-Light Sans";
-    color: var(--gray-500);
-  }
-}
-
-.back_navigate span:hover {
-  color: var(--purple-500);
-}
