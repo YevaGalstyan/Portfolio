@@ -13,6 +13,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ColophonComponent } from './components/colophon/colophon.component';
 import {NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule} from 'ngx-google-analytics';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { WorkComponent } from './components/projects/work/work.component';
+import { ProjectItemComponent } from './components/projects/project-item/project-item.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +24,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
         MembershipsComponent,
         ContactComponent,
         HomeComponent,
-        ColophonComponent
+        ColophonComponent,
+        WorkComponent,
+        ProjectItemComponent
     ],
     imports: [
         BrowserModule,

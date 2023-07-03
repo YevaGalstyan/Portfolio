@@ -4,17 +4,20 @@ import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CardComponent
   ],
-  exports: [
-    HeaderComponent,
-    FooterComponent
-  ],
+    exports: [
+        HeaderComponent,
+        FooterComponent,
+        CardComponent
+    ],
   imports: [
     CommonModule,
     RouterLink,

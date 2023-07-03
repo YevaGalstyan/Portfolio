@@ -1,0 +1,17 @@
+<div class="project_block">
+    <div routerLink="/work" class="back_navigate">
+        <span>{{localize.work}}</span>
+    </div>
+    <div class="project_header">
+        <h2>{{info.name}}</h2>
+        <div class="project_subtitle">
+            <span>{{info.date}}</span>
+            <span>•</span>
+            <a target="_blank" [href]="info.link">
+                <span>{{localize.openProject}}</span>
+            </a>
+        </div>
+
+    </div>
+
+</div>

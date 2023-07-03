@@ -16,7 +16,7 @@
 
   }
 
-  h2, h4 {
+  h2, h4, h5 {
     font-family: "Nunito-Medium Sans";
   }
 
@@ -33,7 +33,7 @@
 .info_block {
   padding: 24px;
   border-radius: 6px;
-  margin: 48px 0 24px;
+  margin: 24px 0 0;
   background-color: var(--gray-50);
   display: flex;
   flex-direction: column;
@@ -43,10 +43,34 @@
     font-family: "Nunito-Medium Sans";
   }
 
-  h6, span {
+  h5, h6, span {
     font-family: "Nunito-Light Sans";
   }
 }
+
+.info_header_block {
+  .info_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info_subheader {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    span {
+      color: var(--gray-600);
+    }
+  }
+
+  h5 {
+    color: var(--purple-500);
+    cursor: pointer;
+  }
+}
+
 
 .info_input {
   background-color: var(--gray-100);
@@ -63,4 +87,49 @@
   span {
     color: var(--gray-600);
   }
+}
+
+.tag_block {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+
+  .tag_item {
+    border-radius: 20px;
+    background-color: var(--purple-400);
+    color: var(--main-white);
+    padding: 4px 12px;
+
+    span {
+      line-height: normal;
+    }
+  }
+}
+
+.location {
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.card_block {
+  padding: 24px 0 0;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.back_navigate {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  span {
+    font-family: "Nunito-Light Sans";
+    color: var(--gray-500);
+  }
+}
+
+.back_navigate span:hover {
+  color: var(--purple-500);
 }
