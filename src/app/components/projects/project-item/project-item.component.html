@@ -1,7 +1,5 @@
 <div class="project_block">
-    <div routerLink="/work" class="back_navigate">
-        <span>{{localize.work}}</span>
-    </div>
+    <span routerLink="/work" class="back_navigate">{{localize.work}}</span>
     <div class="project_header">
         <h2>{{info.name}}</h2>
         <div class="project_subtitle">
@@ -11,7 +9,13 @@
                 <span>{{localize.openProject}}</span>
             </a>
         </div>
+    </div>
 
+    <div class="project_body">
+        <span>{{info.description}}</span>
+        <img src="assets/images/projects/trade.png">
     </div>
 
 </div>
+
+<app-scroll-to-top></app-scroll-to-top>

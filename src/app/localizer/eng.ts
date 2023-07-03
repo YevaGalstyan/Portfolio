@@ -79,7 +79,9 @@ export const localize: ILocalize = {
     creatingProjectInSource: 'Developing an accounting application specifically designed for the online banking accounting team.',
     providingSupportTechnamin: 'Managing the upkeep of an online gaming platform and designing an administrative dashboard for gaming staff members.',
     projectContributions: 'Below is a compilation of my personal projects and collaborative contributions over the past few years:',
-    tradingService: 'A platform offering services for conducting cryptocurrency trading in a safe and protected environment.',
+    tradingService: 'Imperial Capital Group is a platform offering services for conducting cryptocurrency trading in a safe and protected environment.' +
+        ' The platform offers a user-friendly interface, making it easy for both beginners and experienced traders to navigate and execute trades effectively.' +
+        ' It provides a seamless trading experience with real-time market data and intuitive trading tools.',
     medControlService: 'Platform designed specifically for private medical institutions to manage and maintain their journal records securely and privately.',
     tradingServiceShort: 'Administrative panel for cryptocurrency trading',
     medControlServiceShort: 'Administrative panel for private medical institutions',
