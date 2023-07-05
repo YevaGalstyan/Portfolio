@@ -1,4 +1,4 @@
-# Portfolio
+ # Portfolio
 
 Welcome to my portfolio application! This project showcases my work, skills, and experiences as an Angular developer.
 
@@ -78,5 +78,5 @@ This project is licensed under the MIT License.
 If you have any questions, suggestions, or would like to discuss potential collaboration opportunities,
 please feel free to reach out to me through the following channels:
 
--Email: `eva.gal0908@gmail.com`
-LinkedIn: Yeva Galstyan
+- Email: `eva.gal0908@gmail.com`
+- LinkedIn: Yeva Galstyan
