@@ -1,23 +1,22 @@
 import {Component, HostListener} from '@angular/core';
 
 @Component({
-  selector: 'app-scroll-to-top',
-  templateUrl: './scroll-to-top.component.html',
-  styleUrls: ['./scroll-to-top.component.scss']
+    selector: 'app-scroll-to-top',
+    templateUrl: './scroll-to-top.component.html',
+    styleUrls: ['./scroll-to-top.component.scss']
 })
 export class ScrollToTopComponent {
 
-  private readonly scrollThreshold: number = 500;
-  showScrollToTopButton: boolean = false;
+    // In case of long scroll add component to easily scroll to top
+    private readonly scrollThreshold: number = 300;
+    showScrollToTopButton: boolean = false;
 
-  // Listen to the window scroll event
-  @HostListener('window:scroll')
-  onWindowScroll() {
-    this.showScrollToTopButton = window.pageYOffset > this.scrollThreshold;
-  }
+    @HostListener('window:scroll')
+    onWindowScroll() {
+        this.showScrollToTopButton = window.pageYOffset > this.scrollThreshold;
+    }
 
-  // Scroll to top when the button is clicked
-  scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+    scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
 }

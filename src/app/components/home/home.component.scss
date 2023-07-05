@@ -43,3 +43,23 @@ h6, a {
     color: var(--blue-600);
   }
 }
+
+.review_section {
+  display: flex;
+  justify-content: space-between;
+
+
+  .review_block {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex: 1;
+
+    .reviewer {
+      overflow: hidden;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+  }
+}

@@ -15,6 +15,14 @@ export interface ILocalize {
     projects: string
     expertise: string
     professionalExperience: string
+    currentPosition: string
+    recentProject: string
+
+    // Feedbacks
+    feedbacks: string
+    andreyVasilyev: string
+    andreyVasilyevPosition: string
+    reviewAndrey: string
 
     // CV
     cv: string
@@ -76,11 +84,13 @@ export interface ILocalize {
     creatingProjectInSource: string
     providingSupportTechnamin: string
     projectContributions: string
+    recentProjectList: string
     tradingService: string
     medControlService: string
     tradingServiceShort: string
     medControlServiceShort: string
     openProject: string
+
 
     // About
     IAmYevaGalstyan: string
@@ -88,6 +98,8 @@ export interface ILocalize {
     workplace: string
     myPosition: string
     alsoWorking: string
+    proceedToWorkPage: string
+    toGainInformation: string
 
     // Months
     jan: string
