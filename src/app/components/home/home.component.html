@@ -86,7 +86,7 @@
             </div>
 
             <div class="card_block">
-                <app-card *ngFor="let item of projects.projectsDetails | slice:1:2"
+                <app-card *ngFor="let item of projects.projectsDetails | slice:0:1"
                           (cardClicked)="generalService.navigate('work/' + item.id)"
                           [imgUrl]="item.outerImgUrl"
                           [cardHeader]="item.cardHeader"

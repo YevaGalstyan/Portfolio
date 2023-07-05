@@ -13,7 +13,7 @@
 
     <div class="project_body">
         <span>{{info.description}}</span>
-        <img [src]="'assets/images/projects/' + info.imgUrl">
+        <img *ngFor="let img of info.imgUrls" [src]="'assets/images/projects/' + img">
     </div>
     <app-paging></app-paging>
 </div>
