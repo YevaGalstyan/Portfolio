@@ -67,7 +67,7 @@ export const localize: ILocalize = {
     websiteDesign: 'The UI design has been created by',
     lazarNikolov: 'Lazar Nikolov',
     websiteDesignLink: ' and is available for access at ',
-    websiteLanguage: 'The website has been developed using the',
+    websiteLanguage: 'The website has been developed using ',
     websiteDeployed: ' is deployed on ',
     websiteSourceCode: 'The source code is open source and can be found on ',
     websiteUses: 'This website uses ',
