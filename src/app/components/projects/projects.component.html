@@ -3,7 +3,7 @@
     <div class="body_header">
         <h4>{{localize.localize.professionalExperience + '.'}}</h4>
         <span>{{localize.localize.workExperience}}
-            <a (click)="scrollPage()"><span>{{ localize.localize.independentProject + ':' }}</span></a>
+            <a (click)="generalService.scrollPage()"><span>{{ localize.localize.independentProject + ':' }}</span></a>
         </span>
     </div>
 
@@ -62,5 +62,23 @@
             <div class="tag_item"><span>{{localize.localize.html}}</span></div>
         </div>
     </div>
-    <app-work></app-work>
+
+    <div class="body_block">
+        <!--Independent projects-->
+        <div class="body_header">
+            <h4 style="text-transform: capitalize">{{localize.localize.independentProject + '.'}}</h4>
+            <span>{{localize.localize.projectContributions}}</span>
+        </div>
+
+        <div class="card_block">
+            <app-card *ngFor="let item of projects.projectsDetails"
+                    (cardClicked)="generalService.navigate('work/' + item.id)"
+                    [imgUrl]="item.outerImgUrl"
+                    [cardHeader]="item.cardHeader"
+                    [cardInfo]="item.cardInfo">
+            </app-card>
+        </div>
+    </div>
 </div>
+
+<app-scroll-to-top></app-scroll-to-top>

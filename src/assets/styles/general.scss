@@ -1,6 +1,7 @@
 @import "color_palette";
 
 body {
+  text-align: justify;
   @include colorPalette;
   --body-width: 770px
 }
@@ -40,4 +41,22 @@ a, a:active, a:hover, a:focus {
 
 h1, h2, h3, h4, h5, span, p, a {
   line-height: 175%;
+}
+
+// Scroll UI
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-400);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-500)
 }

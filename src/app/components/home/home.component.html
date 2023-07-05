@@ -1,5 +1,5 @@
 <div class="body_block">
-    <!--Contact + CV-->
+    <!--General info-->
     <div class="body_header_block">
         <div class="body_header">
             <h2>{{localize.localize.IAmYevaGalstyan}}</h2>
@@ -37,9 +37,93 @@
         </div>
     </div>
 
-    <!--    &lt;!&ndash;Mail&ndash;&gt;-->
-    <!--    <div class="info_block">-->
-    <!--        <h4>{{localize.localize.contactMe}}</h4>-->
-    <!--        <h6>{{localize.localize.contactMeWith}}</h6>-->
-    <!--    </div>-->
+    <!--Professional experience -->
+    <div style="margin-top: 20px" class="body_block">
+        <!--Professional Experience-->
+        <div class="body_header">
+            <h4>{{localize.localize.currentPosition + '.'}}</h4>
+            <span>{{localize.localize.proceedToWorkPage}}
+                <a routerLink="/work"><span>{{localize.localize.work}}</span></a>
+                <span>{{localize.localize.toGainInformation}}</span>
+            </span>
+        </div>
+
+
+        <!--InSource work-->
+        <div class="info_block">
+            <div class="info_header_block">
+                <div class="info_header">
+                    <h4>{{localize.localize.mid}}</h4>
+                    <span>{{'2021 ' + localize.localize.oct + ' - ' + localize.localize.present}}</span>
+                </div>
+                <div class="info_subheader">
+                    <a target="_blank" href="https://www.linkedin.com/company/insourceam/mycompany/">
+                        <h5>{{localize.localize.inSource}}</h5>
+                    </a>
+                    <div class="location">
+                        <span>{{localize.localize.yerevan}}</span>
+                        <img src="assets/images/icons/location.svg">
+                    </div>
+                </div>
+            </div>
+            <h6>{{localize.localize.providingSupportInSource}}
+                {{localize.localize.creatingProjectInSource}}
+            </h6>
+
+            <div class="tag_block">
+                <div class="tag_item"><span>{{localize.localize.angular}}</span></div>
+                <div class="tag_item"><span>{{localize.localize.typescript}}</span></div>
+                <div class="tag_item"><span>{{localize.localize.scss}}</span></div>
+                <div class="tag_item"><span>{{localize.localize.figma}}</span></div>
+            </div>
+        </div>
+
+        <div class="body_block">
+            <!--Recent project-->
+            <div class="body_header">
+                <h4 style="text-transform: capitalize">{{localize.localize.recentProject + '.'}}</h4>
+                <span>{{localize.localize.recentProjectList}}</span>
+            </div>
+
+            <div class="card_block">
+                <app-card *ngFor="let item of projects.projectsDetails | slice:1:2"
+                          (cardClicked)="generalService.navigate('work/' + item.id)"
+                          [imgUrl]="item.outerImgUrl"
+                          [cardHeader]="item.cardHeader"
+                          [cardInfo]="item.cardInfo">
+                </app-card>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Reviews-->
+    <div style="margin-top: 20px" class="body_block">
+        <!--Professional Experience-->
+        <div class="body_header">
+            <h4>{{localize.localize.feedbacks + '.'}}</h4>
+        </div>
+
+
+        <!--InSource work-->
+        <div class="info_block">
+            <div class="info_header_block">
+                <div class="review_section">
+                    <div class="review_block">
+                        <div class="reviewer">
+                            <img width="100%" src="assets/images/reviewers/andrey.jpeg">
+                        </div>
+                        <div>
+                            <h4>{{localize.localize.andreyVasilyev}}</h4>
+                            <span>{{localize.localize.andreyVasilyevPosition}}</span>
+                        </div>
+                    </div>
+                    <img src="assets/images/icons/quote.svg">
+                </div>
+            </div>
+            <span>{{localize.localize.reviewAndrey}}</span>
+        </div>
+    </div>
 </div>
+
+<app-scroll-to-top></app-scroll-to-top>

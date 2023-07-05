@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {project, ProjectsService} from '../../../shared/helpers/projects';
+import {project, ProjectsService} from '../../../services/projects';
 import {localize} from '../../../localizer/eng';
 import {ILocalize} from '../../../localizer/localize';
 
@@ -20,8 +20,13 @@ export class ProjectItemComponent implements OnInit {
 
     ngOnInit() {
         this.route.params.subscribe(params => {
-            const projectName = params['name'];
-            this.info = this.projectsService.projects[projectName];
+            const projectId = Number(params['id']);
+            this.projectsService.projectsDetails.forEach(item => {
+                if (projectId === item.id) {
+                    this.info = item;
+                    return
+                }
+            })
         });
     }
 
