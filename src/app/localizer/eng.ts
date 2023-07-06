@@ -6,12 +6,13 @@ export const localize: ILocalize = {
     and: ' and',
     copy: 'copy',
     copied: 'copied!',
+    underConstruction: 'This page is currently being developed.',
 
     // Menu
     about: 'About',
     education: 'Education',
     work: 'Work',
-    membership: 'Membership',
+    membership: 'Memberships',
     contact: 'Contact',
     home: 'Home',
     colophon: 'Colophon',
@@ -20,14 +21,14 @@ export const localize: ILocalize = {
     professionalExperience: 'Professional Experience',
     currentPosition: 'Current Position',
     recentProject: 'Recent Projects',
+    nextProject: 'Next Project',
 
     // Feedbacks
     feedbacks: 'Feedbacks',
     andreyVasilyev: 'Andrey Vasilyev',
     andreyVasilyevPosition: 'UI/UX designer, Founder of Med Control',
     reviewAndrey: 'We provide an online service for production control to medical organizations. Yeva was involved in the development of the MVP (Minimum Viable Product) from the very beginning, when there were only prototypes.' +
-        ' She was solely responsible for the frontend architecture and handled everything until the release. It was a pleasure working with Yeva since over the course of 8 months, we had significant changes in the product, and despite that, she approached the work with great flexibility.' +
-        ' She would immediately make changes if something was not right and would propose her own solutions when faced with complex interface tasks. Additionally, it was comfortable and enjoyable to communicate with her.',
+        ' She was solely responsible for the frontend architecture and handled everything until the release. It was a pleasure working with Yeva since over the course of 8 months, we had significant changes in the product, and despite that, she approached the work with great flexibility.',
 
     // Cv
     cv: 'CV',
@@ -85,8 +86,7 @@ export const localize: ILocalize = {
     independentProject: 'independent projects',
     mid: 'Mid Front-end Engineer',
     junior: 'Strong Junior Front-End Engineer',
-    providingSupportInSource: 'Providing support for a pre-existing administrative panels for an online banking customer support team.',
-    creatingProjectInSource: 'Developing an accounting application specifically designed for the online banking accounting team.',
+    providingSupportInSource: 'Providing support for a pre-existing administrative panels for an online banking customer support team. Developing an accounting application specifically designed for the online banking accounting team.',
     providingSupportTechnamin: 'Managing the upkeep of an online gaming platform and designing an administrative dashboard for gaming staff members.',
     projectContributions: 'Below is a compilation of my personal projects and collaborative contributions over the past few years:',
     tradingService: 'Imperial Capital Group is a platform offering services for conducting cryptocurrency trading in a safe and protected environment.' +
@@ -100,6 +100,9 @@ export const localize: ILocalize = {
     medControlServiceShort: 'Administrative panel for medical institutions',
     openProject: 'Open Project',
     recentProjectList: 'Listed below are details about the most recent projects I have been actively involved in:',
+
+    // Memberships
+    volunteerExperience: 'Displayed below are comprehensive insights into my volunteering experience, showcasing the various aspects of my involvement, contributions, and accomplishments:',
 
     // About
     IAmYevaGalstyan: 'Hi, I’m Yeva Galstyan.',

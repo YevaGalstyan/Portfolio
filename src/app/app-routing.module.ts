@@ -25,6 +25,8 @@ const routes: Routes = [
     {path: 'contact', component: ContactComponent},
     {path: 'memberships', component: MembershipsComponent},
     {path: 'colophon', component: ColophonComponent},
+
+    {path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({

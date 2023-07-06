@@ -1,1 +1,22 @@
-<p>position-item works!</p>
+<div class="info_block">
+    <div class="info_header_block">
+        <div class="info_header">
+            <h4>{{position.positionName}}</h4>
+            <span>{{position.period}}</span>
+        </div>
+        <div class="info_subheader">
+            <a target="_blank" href="https://www.linkedin.com/company/insourceam/mycompany/">
+                <h5>{{position.companyName}}</h5>
+            </a>
+            <div class="location">
+                <span>{{position.location}}</span>
+                <img src="assets/images/icons/location.svg">
+            </div>
+        </div>
+    </div>
+    <h6>{{position.description}}</h6>
+
+    <div class="tag_block">
+        <div *ngFor="let skill of position.skills" class="tag_item"><span>{{skill}}</span></div>
+    </div>
+</div>

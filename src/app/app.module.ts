@@ -17,6 +17,8 @@ import {ContactComponent} from './components/contact/contact.component';
 import {HomeComponent} from './components/home/home.component';
 import {ColophonComponent} from './components/colophon/colophon.component';
 import {ProjectItemComponent} from './components/projects/project-item/project-item.component';
+import {ProjectsModule} from './components/projects/projects.module';
+import { MembershipItemComponent } from './components/memberships/membership-item/membership-item.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +29,8 @@ import {ProjectItemComponent} from './components/projects/project-item/project-i
         ContactComponent,
         HomeComponent,
         ColophonComponent,
-        ProjectItemComponent
+        ProjectItemComponent,
+        MembershipItemComponent
     ],
     imports: [
         BrowserModule,
@@ -36,7 +39,8 @@ import {ProjectItemComponent} from './components/projects/project-item/project-i
         BrowserAnimationsModule,
         NgxGoogleAnalyticsModule.forRoot('G-V8DGV3G31Z'),
         NgxGoogleAnalyticsRouterModule,
-        MatTooltipModule
+        MatTooltipModule,
+        ProjectsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
