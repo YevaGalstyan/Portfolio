@@ -1,14 +1,52 @@
 import {Injectable} from '@angular/core';
 import {LocalizeService} from '../localizer/localize.service';
+import {feedback, memberships, position, project} from '../interfaces/data';
 
 @Injectable({
     providedIn: 'root'
 })
 
-export class ProjectsService {
+export class DataService {
 
     constructor(private localize: LocalizeService) {
     }
+
+    memberships: memberships[] = [
+        {
+
+        }
+    ]
+
+    feedbacks: feedback[] = [
+        {
+            imgUrl: 'andrey.jpeg',
+            name: this.localize.localize.andreyVasilyev,
+            position: this.localize.localize.andreyVasilyevPosition,
+            review: this.localize.localize.reviewAndrey
+        }
+    ]
+
+    positions: position[] = [
+        {
+            positionName: this.localize.localize.mid,
+            period: '2021 ' + this.localize.localize.oct + ' - ' + this.localize.localize.present,
+            companyName: this.localize.localize.inSource,
+            location: this.localize.localize.yerevan,
+            description: this.localize.localize.providingSupportInSource,
+            skills: [this.localize.localize.angular, this.localize.localize.typescript,
+                this.localize.localize.scss, this.localize.localize.figma]
+        },
+
+        {
+            positionName: this.localize.localize.junior,
+            period: '2020 ' + this.localize.localize.nov + ' - ' + '2021 ' + this.localize.localize.oct,
+            companyName: this.localize.localize.technamin,
+            location: this.localize.localize.yerevan,
+            description: this.localize.localize.providingSupportTechnamin,
+            skills: [this.localize.localize.angularJs, this.localize.localize.javascript,
+                this.localize.localize.html]
+        }
+    ]
 
     projectsDetails: project[] = [
         {
@@ -39,22 +77,4 @@ export class ProjectsService {
             cardInfo: this.localize.localize.tradingServiceShort
         },
     ]
-}
-
-export interface projects {
-    [x: string]: project
-}
-
-export interface project {
-    // Details - inner page
-    name: string
-    date: string
-    link: string
-    imgUrls: string[]
-    description: string
-
-    // Outer - card information
-    cardHeader: string
-    outerImgUrl: string
-    cardInfo: string
 }

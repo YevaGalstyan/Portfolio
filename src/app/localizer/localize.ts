@@ -3,6 +3,7 @@ export interface ILocalize {
     and: string;
     copy: string
     copied: string
+    underConstruction: string
 
     // Menu
     about: string;
@@ -17,6 +18,7 @@ export interface ILocalize {
     professionalExperience: string
     currentPosition: string
     recentProject: string
+    nextProject: string
 
     // Feedbacks
     feedbacks: string
@@ -81,7 +83,6 @@ export interface ILocalize {
     mid: string
     junior: string
     providingSupportInSource: string
-    creatingProjectInSource: string
     providingSupportTechnamin: string
     projectContributions: string
     recentProjectList: string
@@ -91,6 +92,8 @@ export interface ILocalize {
     medControlServiceShort: string
     openProject: string
 
+    // Memberships
+    volunteerExperience: string
 
     // About
     IAmYevaGalstyan: string

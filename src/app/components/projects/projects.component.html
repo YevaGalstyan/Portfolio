@@ -1,78 +1,27 @@
 <div class="body_block">
     <!--Professional Experience-->
     <div class="body_header">
-        <h4>{{localize.localize.professionalExperience + '.'}}</h4>
+        <h4>{{localize.localize.professionalExperience}}</h4>
         <span>{{localize.localize.workExperience}}
             <a (click)="generalService.scrollPage()"><span>{{ localize.localize.independentProject + ':' }}</span></a>
         </span>
     </div>
 
-
-    <!--InSource work-->
-    <div class="info_block">
-        <div class="info_header_block">
-            <div class="info_header">
-                <h4>{{localize.localize.mid}}</h4>
-                <span>{{'2021 ' + localize.localize.oct + ' - ' + localize.localize.present}}</span>
-            </div>
-            <div class="info_subheader">
-                <a target="_blank" href="https://www.linkedin.com/company/insourceam/mycompany/">
-                    <h5>{{localize.localize.inSource}}</h5>
-                </a>
-                <div class="location">
-                    <span>{{localize.localize.yerevan}}</span>
-                    <img src="assets/images/icons/location.svg">
-                </div>
-            </div>
-        </div>
-        <h6>{{localize.localize.providingSupportInSource}}
-            {{localize.localize.creatingProjectInSource}}
-        </h6>
-
-        <div class="tag_block">
-            <div class="tag_item"><span>{{localize.localize.angular}}</span></div>
-            <div class="tag_item"><span>{{localize.localize.typescript}}</span></div>
-            <div class="tag_item"><span>{{localize.localize.scss}}</span></div>
-            <div class="tag_item"><span>{{localize.localize.figma}}</span></div>
-        </div>
-    </div>
-
-    <!--Technamin work-->
-    <div class="info_block">
-        <div class="info_header_block">
-            <div class="info_header">
-                <h4>{{localize.localize.junior}}</h4>
-                <span>{{'2020 ' + localize.localize.nov + ' - ' + '2021 ' + localize.localize.oct}}</span>
-            </div>
-            <div class="info_subheader">
-                <a target="_blank" href="https://technamin.com/">
-                    <h5>{{localize.localize.technamin}}</h5>
-                </a>
-                <div class="location">
-                    <span>{{localize.localize.yerevan}}</span>
-                    <img src="assets/images/icons/location.svg">
-                </div>
-            </div>
-        </div>
-        <h6>{{localize.localize.providingSupportTechnamin}}</h6>
-
-        <div class="tag_block">
-            <div class="tag_item"><span>{{localize.localize.angularJs}}</span></div>
-            <div class="tag_item"><span>{{localize.localize.javascript}}</span></div>
-            <div class="tag_item"><span>{{localize.localize.html}}</span></div>
-        </div>
-    </div>
+    <app-position-item
+            *ngFor="let position of dataService.positions"
+            [position]="position">
+    </app-position-item>
 
     <div class="body_block">
         <!--Independent projects-->
         <div class="body_header">
-            <h4 style="text-transform: capitalize">{{localize.localize.independentProject + '.'}}</h4>
+            <h4 style="text-transform: capitalize">{{localize.localize.independentProject}}</h4>
             <span>{{localize.localize.projectContributions}}</span>
         </div>
 
         <div class="card_block">
-            <app-card *ngFor="let item of projects.projectsDetails"
-                    (cardClicked)="generalService.navigate('work/' + item.id)"
+            <app-card *ngFor="let item of dataService.projectsDetails; let i=index"
+                    (cardClicked)="generalService.navigate('work/' + (i+1));"
                     [imgUrl]="item.outerImgUrl"
                     [cardHeader]="item.cardHeader"
                     [cardInfo]="item.cardInfo">

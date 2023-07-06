@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {LocalizeService} from '../../localizer/localize.service';
 import {GeneralService} from '../../services/general.service';
-import {ProjectsService} from '../../services/projects';
+import {DataService} from '../../services/data';
 
 @Component({
     selector: 'app-projects',
@@ -11,7 +11,7 @@ import {ProjectsService} from '../../services/projects';
 export class ProjectsComponent {
 
     constructor(public readonly localize: LocalizeService,
-                public readonly projects: ProjectsService,
+                public readonly dataService: DataService,
                 public readonly generalService: GeneralService) {
     }
 }

@@ -6,6 +6,8 @@ import {Router} from '@angular/router';
 })
 export class GeneralService {
 
+  // Public
+
   constructor(
       private readonly router: Router) { }
 

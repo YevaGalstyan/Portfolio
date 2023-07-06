@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {position} from '../../../interfaces/data';
 
 @Component({
   selector: 'app-position-item',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class PositionItemComponent {
 
+  @Input() position!: position
 }
