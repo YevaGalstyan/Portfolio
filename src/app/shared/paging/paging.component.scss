@@ -1,2 +1,28 @@
 .paging_block {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin: 0 auto;
+
+  width: 220px;
+  height: fit-content;
+
+  background-color: var(--gray-400);
+  color: var(--main-white);
+
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 15px;
+  text-align: left;
+
+  span {
+    font-family: "Nunito-Light Sans";
+  }
+
+  h6 {
+    cursor: pointer;
+    font-family: "Nunito-Bold Sans";
+  }
 }

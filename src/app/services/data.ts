@@ -13,7 +13,6 @@ export class ProjectsService {
     projectsDetails: project[] = [
         {
             // Details - inner page
-            id: 1,
             name: this.localize.localize.medControl + ' / МЕД УПРАВЛЕНИЕ',
             date: '2022 ' + this.localize.localize.nov + ' - ' + this.localize.localize.present,
             description: this.localize.localize.medControlService,
@@ -28,7 +27,6 @@ export class ProjectsService {
 
         {
             // Details - inner page
-            id: 2,
             name: this.localize.localize.imperialCapital,
             date: '2021 ' + this.localize.localize.may + ' - ' + '2021 ' + this.localize.localize.sep,
             description: this.localize.localize.tradingService,
@@ -39,7 +37,7 @@ export class ProjectsService {
             cardHeader: this.localize.localize.imperialCapital,
             outerImgUrl: '/projects/trade_small.png',
             cardInfo: this.localize.localize.tradingServiceShort
-        }
+        },
     ]
 }
 
@@ -48,7 +46,6 @@ export interface projects {
 }
 
 export interface project {
-    id: number;
     // Details - inner page
     name: string
     date: string
