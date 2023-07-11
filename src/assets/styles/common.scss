@@ -51,6 +51,7 @@
 .info_header_block {
   .info_header {
     display: flex;
+    flex: 1;
     justify-content: space-between;
     align-items: center;
   }
@@ -58,7 +59,7 @@
   .info_subheader {
     display: flex;
     gap: 15px;
-    align-items: center;
+    align-items: baseline;
 
     span {
       color: var(--gray-600);

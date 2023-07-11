@@ -1,1 +1,30 @@
-<p>membership-item works!</p>
+<div class="info_block">
+    <div class="info_header_block">
+        <div class="membership_block">
+            <div class="membership_logo">
+                <img width="100%" [src]="'assets/images/memberships/' + membership.imgUrl">
+            </div>
+            <div class="membership_info">
+                <div class="info_header">
+                    <h4>{{membership.positionName}}</h4>
+                    <span>{{membership.period}}</span>
+                </div>
+                <div class="info_subheader">
+                    <a target="_blank" [href]="membership.url">
+                        <h5>{{membership.name}}</h5>
+                    </a>
+                    <div class="location">
+                        <span>{{membership.location}}</span>
+                        <img src="assets/images/icons/location.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <h6>{{membership.description}}</h6>
+
+        <div class="tag_block">
+            <div *ngFor="let skill of membership.skills" class="tag_item"><span>{{skill}}</span></div>
+        </div>
+</div>

@@ -1,4 +1,5 @@
 <div class="body_block">
+
     <!--General info-->
     <div class="body_header_block">
         <div class="body_header">
@@ -53,25 +54,24 @@
                 *ngFor="let position of dataService.positions | slice: 0: 1"
                 [position]="position">
         </app-position-item>
+    </div>
 
-        <div class="body_block">
-            <!--Recent project-->
-            <div class="body_header">
-                <h4 style="text-transform: capitalize">{{localize.localize.recentProject}}</h4>
-                <span>{{localize.localize.recentProjectList}}</span>
-            </div>
-
-            <div class="card_block">
-                <app-card
-                        *ngFor="let item of dataService.projectsDetails | slice:0:1; let i=index"
-                        (cardClicked)="generalService.navigate('work/' + (i+1))"
-                        [imgUrl]="item.outerImgUrl"
-                        [cardHeader]="item.cardHeader"
-                        [cardInfo]="item.cardInfo">
-                </app-card>
-            </div>
+    <!--Recent project-->
+    <div class="body_block">
+        <div class="body_header">
+            <h4 style="text-transform: capitalize">{{localize.localize.recentProject}}</h4>
+            <span>{{localize.localize.recentProjectList}}</span>
         </div>
 
+        <div class="card_block">
+            <app-card
+                    *ngFor="let item of dataService.projectsDetails | slice:0:1; let i=index"
+                    (cardClicked)="generalService.navigate('work/' + (i+1))"
+                    [imgUrl]="item.outerImgUrl"
+                    [cardHeader]="item.cardHeader"
+                    [cardInfo]="item.cardInfo">
+            </app-card>
+        </div>
     </div>
 
     <!--Reviews-->

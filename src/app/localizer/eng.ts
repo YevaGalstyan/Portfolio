@@ -55,6 +55,12 @@ export const localize: ILocalize = {
     html: 'HTML',
     vercel: 'Vercel',
     googleAnalytics: 'Google Analytics',
+    adobePhotoshop: 'Adobe Photoshop',
+    adobeIllustrator: 'Adobe Illustrator',
+    photographySkills: 'Photography skills',
+    contentWriting: 'Content Writing',
+    smm: 'SMM skills',
+    managementSkills: 'Management skills',
 
     // Names
     inSource: 'Insource.am',
@@ -101,8 +107,6 @@ export const localize: ILocalize = {
     openProject: 'Open Project',
     recentProjectList: 'Listed below are details about the most recent projects I have been actively involved in:',
 
-    // Memberships
-    volunteerExperience: 'Displayed below are comprehensive insights into my volunteering experience, showcasing the various aspects of my involvement, contributions, and accomplishments:',
 
     // About
     IAmYevaGalstyan: 'Hi, I’m Yeva Galstyan.',
@@ -112,6 +116,15 @@ export const localize: ILocalize = {
     alsoWorking: ' and I am also currently freelancing on multiple high-volume ',
     proceedToWorkPage: 'To gain further insight into my work experience and independent projects, kindly proceed to the ',
     toGainInformation: '  page for detailed information.',
+
+    // Membership
+    volunteerExperience: 'Displayed below are comprehensive insights into my volunteering experience, showcasing the various aspects of my involvement and contributions:',
+    scout: 'Volunteer / Scout',
+    agbu: 'AGBU',
+    agbuDescription: 'Encompassing photography services for scouting events, writing articles for the monthly scouting magazine, and participating in the management of social media platforms.',
+    ysuSC: 'YSU Student Council',
+    mediaHead: 'Head of the media committee',
+    ysuDescription: 'Mentoring and leading a team dedicated to social media management as well as facilitating the optimization of workflow procedures, fostering a productive and efficient work environment withing the team.',
 
     // Months
     jan: 'January',
