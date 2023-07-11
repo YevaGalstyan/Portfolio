@@ -19,6 +19,7 @@ export interface position {
     location: string
     description: string
     skills: string[]
+    url: string
 }
 
 export interface feedback {
@@ -28,6 +29,13 @@ export interface feedback {
     review: string
 }
 
-export interface memberships {
-
+export interface membership {
+    imgUrl: string;
+    url: string
+    positionName: string;
+    period: string
+    name: string
+    location: string
+    description: string
+    skills: string[]
 }

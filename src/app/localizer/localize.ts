@@ -51,6 +51,12 @@ export interface ILocalize {
     scss: string
     html: string
     googleAnalytics: string
+    adobePhotoshop: string
+    adobeIllustrator: string
+    photographySkills: string
+    contentWriting: string
+    smm: string
+    managementSkills: string
 
     // Names
     inSource: string,
@@ -92,9 +98,6 @@ export interface ILocalize {
     medControlServiceShort: string
     openProject: string
 
-    // Memberships
-    volunteerExperience: string
-
     // About
     IAmYevaGalstyan: string
     myOccupation: string
@@ -103,6 +106,15 @@ export interface ILocalize {
     alsoWorking: string
     proceedToWorkPage: string
     toGainInformation: string
+
+    // Membership
+    volunteerExperience: string
+    scout: string
+    agbu: string
+    agbuDescription: string
+    ysuSC: string
+    mediaHead: string
+    ysuDescription: string
 
     // Months
     jan: string
