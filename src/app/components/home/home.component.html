@@ -80,10 +80,7 @@
             <h4>{{localize.localize.feedbacks}}</h4>
         </div>
 
-        <app-feedback-item
-                *ngFor="let feedback of dataService.feedbacks"
-                [feedback]="feedback">
-        </app-feedback-item>
+        <app-feedbacks [feedbacks]="dataService.feedbacks"></app-feedbacks>
     </div>
 </div>
 

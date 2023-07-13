@@ -1,1 +1,30 @@
-<app-under-construction></app-under-construction>
+<div class="body_block">
+    <!--Education-->
+    <div class="body_header">
+        <h4>{{localize.localize.education}}</h4>
+        <span>
+            {{localize.localize.educationDescription}}
+            <a (click)="generalService.scrollPage(600)"><span>{{localize.localize.trainings + ':'}}</span></a>
+        </span>
+    </div>
+
+    <app-membership-item
+            *ngFor="let education of dataService.education"
+            [membership]="education">
+    </app-membership-item>
+
+
+    <div class="body_block">
+        <!--Trainings-->
+        <div class="body_header">
+            <h4 style="text-transform: capitalize">{{localize.localize.trainings}}</h4>
+            <span>{{localize.localize.trainingDescription}}</span>
+        </div>
+
+        <app-membership-item
+                *ngFor="let education of dataService.trainings"
+                [membership]="education">
+        </app-membership-item>
+    </div>
+
+</div>

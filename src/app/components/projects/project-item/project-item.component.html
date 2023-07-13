@@ -8,6 +8,10 @@
             <a target="_blank" [href]="info.link">
                 <span>{{localize.openProject}}</span>
             </a>
+            <span *ngIf="info.github">•</span>
+            <a *ngIf="info.github" target="_blank" [href]="info.github">
+                <img width="20px" src="assets/images/icons/github-mark.svg">
+            </a>
         </div>
     </div>
 

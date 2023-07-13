@@ -19,6 +19,7 @@ export interface ILocalize {
     currentPosition: string
     recentProject: string
     nextProject: string
+    trainings: string
 
     // Feedbacks
     feedbacks: string
@@ -46,10 +47,13 @@ export interface ILocalize {
     angular: string
     angularJs: string
     javascript: string
+    jquery: string
     typescript: string
     vercel: string
     scss: string
     html: string
+    css: string
+    git: string
     googleAnalytics: string
     adobePhotoshop: string
     adobeIllustrator: string
@@ -57,6 +61,11 @@ export interface ILocalize {
     contentWriting: string
     smm: string
     managementSkills: string
+    leadershipSkills: string
+    conflictResolution: string
+    teamWork: string
+    coaching: string
+    conflictSolving: string
 
     // Names
     inSource: string,
@@ -64,6 +73,7 @@ export interface ILocalize {
     imperialCapital: string
     medControl: string
     yerevan: string
+    aveiro: string
 
     // Info introductions
     websiteDevelopment: string
@@ -112,9 +122,26 @@ export interface ILocalize {
     scout: string
     agbu: string
     agbuDescription: string
+    ysuIAMSC: string
     ysuSC: string
     mediaHead: string
     ysuDescription: string
+
+    // Education
+    educationDescription: string
+    erasmusAveiro: string
+    aveiroUniversity: string
+    yerevanUniversity: string
+    ysuFaculty: string
+    highSchool: string
+    polytechUniversity: string
+
+    // Trainings
+    trainingDescription: string
+    attendanceCertificate: string
+    applicationDevelopment: string
+    seriousWebDevelopment: string
+    selfManagementProgram: string
 
     // Months
     jan: string

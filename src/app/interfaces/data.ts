@@ -5,6 +5,7 @@ export interface project {
     link: string
     imgUrls: string[]
     description: string
+    github?: string
 
     // Outer - card information
     cardHeader: string
@@ -36,6 +37,12 @@ export interface membership {
     period: string
     name: string
     location: string
-    description: string
-    skills: string[]
+    description?: string
+    attachedFiles?: attachment[]
+    skills?: string[]
+}
+
+export interface attachment {
+    fileName: string
+    fileLink: string
 }
