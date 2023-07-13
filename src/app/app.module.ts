@@ -8,6 +8,7 @@ import {SharedModule} from './shared/shared.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule} from 'ngx-google-analytics';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {ProjectsModule} from './components/projects/projects.module';
 
 // Components
 import {ProjectsComponent} from './components/projects/projects.component';
@@ -17,8 +18,7 @@ import {ContactComponent} from './components/contact/contact.component';
 import {HomeComponent} from './components/home/home.component';
 import {ColophonComponent} from './components/colophon/colophon.component';
 import {ProjectItemComponent} from './components/projects/project-item/project-item.component';
-import {ProjectsModule} from './components/projects/projects.module';
-import { MembershipItemComponent } from './components/memberships/membership-item/membership-item.component';
+import {MembershipItemComponent} from './components/memberships/membership-item/membership-item.component';
 
 @NgModule({
     declarations: [
@@ -30,7 +30,7 @@ import { MembershipItemComponent } from './components/memberships/membership-ite
         HomeComponent,
         ColophonComponent,
         ProjectItemComponent,
-        MembershipItemComponent
+        MembershipItemComponent,
     ],
     imports: [
         BrowserModule,

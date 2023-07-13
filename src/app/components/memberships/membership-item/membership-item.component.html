@@ -2,7 +2,7 @@
     <div class="info_header_block">
         <div class="membership_block">
             <div class="membership_logo">
-                <img width="100%" [src]="'assets/images/memberships/' + membership.imgUrl">
+                <img width="100%" [src]="'assets/images/' + membership.imgUrl">
             </div>
             <div class="membership_info">
                 <div class="info_header">
@@ -20,11 +20,17 @@
                 </div>
             </div>
         </div>
-
     </div>
-        <h6>{{membership.description}}</h6>
 
-        <div class="tag_block">
-            <div *ngFor="let skill of membership.skills" class="tag_item"><span>{{skill}}</span></div>
-        </div>
+    <h6 *ngIf="membership.description">{{membership.description}}</h6>
+
+    <div *ngIf="membership.skills?.length" class="tag_block">
+        <div *ngFor="let skill of membership.skills" class="tag_item"><span>{{skill}}</span></div>
+    </div>
+
+    <div *ngIf="membership.attachedFiles?.length" class="tag_block">
+        <a target="_blank" [href]="'assets/files/' + file.fileLink"
+           *ngFor="let file of membership.attachedFiles"
+           class="file_item"><span>{{file.fileName}}</span></a>
+    </div>
 </div>

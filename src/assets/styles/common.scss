@@ -105,6 +105,13 @@
       line-height: normal;
     }
   }
+
+  .file_item {
+    border-radius: 20px;
+    border: 1px solid var(--purple-400);
+    color: var(--purple-400);
+    padding: 0 12px;
+  }
 }
 
 .location {

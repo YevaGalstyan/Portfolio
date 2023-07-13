@@ -11,8 +11,8 @@ export class GeneralService {
   constructor(
       private readonly router: Router) { }
 
-  scrollPage(): void {
-    window.scrollTo({ top: 700, behavior: 'smooth' });
+  scrollPage(top: number): void {
+    window.scrollTo({ top: top, behavior: 'smooth' });
   }
 
   navigate(nav: string): void {

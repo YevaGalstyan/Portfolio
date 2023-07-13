@@ -1,0 +1,22 @@
+<div class="info_block">
+    <div class="review_section">
+        <div class="review_block">
+            <div class="reviewer">
+                <img width="100%" [src]="'assets/images/reviewers/' + currentFeedback.imgUrl">
+            </div>
+            <div>
+                <h4>{{currentFeedback.name}}</h4>
+                <span>{{currentFeedback.position}}</span>
+            </div>
+        </div>
+        <img src="assets/images/icons/quote.svg">
+    </div>
+    <span>{{currentFeedback.review}}</span>
+
+    <div class="feedback_slider">
+        <div *ngFor="let feedback of feedbacks" class="feedback_item"
+             [ngClass]="currentFeedback === feedback ? 'active_feedback' : ''"
+             (click)="currentFeedback = feedback">
+        </div>
+    </div>
+</div>

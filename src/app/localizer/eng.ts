@@ -22,6 +22,7 @@ export const localize: ILocalize = {
     currentPosition: 'Current Position',
     recentProject: 'Recent Projects',
     nextProject: 'Next Project',
+    trainings: 'trainings',
 
     // Feedbacks
     feedbacks: 'Feedbacks',
@@ -51,8 +52,11 @@ export const localize: ILocalize = {
     angularJs: 'AngularJS',
     typescript: 'Typescript',
     javascript: 'Javascript',
+    jquery: 'JQuery',
     scss: 'SCSS',
     html: 'HTML',
+    css: 'CSS',
+    git: 'Git',
     vercel: 'Vercel',
     googleAnalytics: 'Google Analytics',
     adobePhotoshop: 'Adobe Photoshop',
@@ -61,6 +65,11 @@ export const localize: ILocalize = {
     contentWriting: 'Content Writing',
     smm: 'SMM skills',
     managementSkills: 'Management skills',
+    leadershipSkills: 'Leadership skills',
+    conflictResolution: 'Conflict resolution',
+    teamWork: 'Team work',
+    conflictSolving: 'Conflict solving',
+    coaching: 'Coaching',
 
     // Names
     inSource: 'Insource.am',
@@ -68,6 +77,7 @@ export const localize: ILocalize = {
     imperialCapital: 'Imperial Capital Group',
     medControl: 'Med Control',
     yerevan: 'Yerevan, Armenia',
+    aveiro: 'Aveiro, Portugal',
 
     // Info introductions
     websiteDevelopment: 'This website is developed by Yeva Galstyan.',
@@ -122,9 +132,26 @@ export const localize: ILocalize = {
     scout: 'Volunteer / Scout',
     agbu: 'AGBU',
     agbuDescription: 'Encompassing photography services for scouting events, writing articles for the monthly scouting magazine, and participating in the management of social media platforms.',
+    ysuIAMSC: 'YSU IAM Student Council',
     ysuSC: 'YSU Student Council',
     mediaHead: 'Head of the media committee',
     ysuDescription: 'Mentoring and leading a team dedicated to social media management as well as facilitating the optimization of workflow procedures, fostering a productive and efficient work environment withing the team.',
+
+    // Education
+    educationDescription: 'Here is a comprehensive overview of my academic history, including my educational background and supplementary ',
+    erasmusAveiro: 'Erasmus+ program in BS in Maths',
+    aveiroUniversity: 'University of Aveiro',
+    yerevanUniversity: 'Yerevan State University',
+    ysuFaculty: 'Bachelor’s degree in CS',
+    highSchool: 'High School',
+    polytechUniversity: 'National Polytechnic University of Armenia',
+
+    // Trainings
+    trainingDescription: 'Below is compilation of the additional training programs I have undergone beyond the regular curriculum:',
+    attendanceCertificate: 'Certificate of Attendance',
+    applicationDevelopment: 'Front-end development',
+    seriousWebDevelopment: 'Serious Web Development',
+    selfManagementProgram: 'Self-governance 2020',
 
     // Months
     jan: 'January',

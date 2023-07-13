@@ -9,7 +9,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {CardComponent} from './card/card.component';
 import {ScrollToTopComponent} from './scroll-to-top/scroll-to-top.component';
 import {PagingComponent} from './paging/paging.component';
-import {FeedbackItemComponent} from './feedback-item/feedback-item.component';
+import {FeedbacksComponent} from './feedbacks/feedbacks.component';
 import { UnderConstructionComponent } from './under-contruction/under-construction.component';
 
 
@@ -20,7 +20,7 @@ import { UnderConstructionComponent } from './under-contruction/under-constructi
         CardComponent,
         ScrollToTopComponent,
         PagingComponent,
-        FeedbackItemComponent,
+        FeedbacksComponent,
         UnderConstructionComponent,
     ],
     exports: [
@@ -29,7 +29,7 @@ import { UnderConstructionComponent } from './under-contruction/under-constructi
         CardComponent,
         ScrollToTopComponent,
         PagingComponent,
-        FeedbackItemComponent,
+        FeedbacksComponent,
         UnderConstructionComponent
     ],
     imports: [
