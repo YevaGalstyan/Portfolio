@@ -9,7 +9,7 @@
                 <span>{{currentFeedback.position}}</span>
             </div>
         </div>
-        <img src="assets/images/icons/quote.svg">
+        <img [width]="generalService.isMobile ? '30' : '50'" src="assets/images/icons/quote.svg">
     </div>
     <span>{{currentFeedback.review}}</span>
 

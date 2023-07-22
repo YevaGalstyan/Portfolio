@@ -1,7 +1,5 @@
 .body_header_block {
-  gap: 48px;
   display: flex;
-  justify-content: space-between;
 }
 
 .personal_img {
@@ -9,10 +7,6 @@
   overflow: hidden;
   height: 224px;
   border-radius: 50%;
-
-  img {
-    margin-top: -34px;
-  }
 }
 
 h6, a {

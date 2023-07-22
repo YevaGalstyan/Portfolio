@@ -27,7 +27,7 @@ export const localize: ILocalize = {
     // Feedbacks
     feedbacks: 'Feedbacks',
     andreyVasilyev: 'Andrey Vasilyev',
-    andreyVasilyevPosition: 'UI/UX designer, Founder of Med Control',
+    andreyVasilyevPosition: 'Founder of Med Control',
     reviewAndrey: 'We provide an online service for production control to medical organizations. Yeva was involved in the development of the MVP (Minimum Viable Product) from the very beginning, when there were only prototypes.' +
         ' She was solely responsible for the frontend architecture and handled everything until the release. It was a pleasure working with Yeva since over the course of 8 months, we had significant changes in the product, and despite that, she approached the work with great flexibility.',
 
@@ -120,7 +120,7 @@ export const localize: ILocalize = {
 
 
     // About
-    IAmYevaGalstyan: 'Hi, I’m Yeva Galstyan.',
+    IAmYevaGalstyan: 'Hi, I’m Yeva.',
     myOccupation: 'I am a bachelor\'s degree holder in Computer Science and  a front-end engineer.',
     workplace: ' I work at',
     myPosition: ' as a front-end developer,',
