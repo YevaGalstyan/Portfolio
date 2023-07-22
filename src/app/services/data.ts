@@ -15,10 +15,10 @@ export class DataService {
         {
             imgUrl: 'trainings/erasmus.jpeg',
             url: ' https://seriousweb.org/',
-            positionName: this.localize.localize.selfManagementProgram,
+            positionName: this.localize.localize.socialTransformation,
             period: this.period(2022, this.localize.localize.may, 2022, this.localize.localize.may, 7, 13),
-            name: this.localize.localize.ysuSC,
-            location: this.localize.localize.yerevan,
+            name: this.localize.localize.mvoProxima,
+            location: this.localize.localize.bakuriani,
             skills: [
                 this.localize.localize.conflictSolving,
                 this.localize.localize.coaching,

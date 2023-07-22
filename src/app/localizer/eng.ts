@@ -77,6 +77,7 @@ export const localize: ILocalize = {
     imperialCapital: 'Imperial Capital Group',
     medControl: 'Med Control',
     yerevan: 'Yerevan, Armenia',
+    bakuriani: 'Bakuriani, Georgia',
     aveiro: 'Aveiro, Portugal',
 
     // Info introductions
@@ -138,7 +139,7 @@ export const localize: ILocalize = {
     ysuDescription: 'Mentoring and leading a team dedicated to social media management as well as facilitating the optimization of workflow procedures, fostering a productive and efficient work environment withing the team.',
 
     // Education
-    educationDescription: 'Here is a comprehensive overview of my academic history, including my educational background and supplementary ',
+    educationDescription: 'Below is the overview of my academic history, including my educational background and ',
     erasmusAveiro: 'Erasmus+ program in BS in Maths',
     aveiroUniversity: 'University of Aveiro',
     yerevanUniversity: 'Yerevan State University',
@@ -152,6 +153,8 @@ export const localize: ILocalize = {
     applicationDevelopment: 'Front-end development',
     seriousWebDevelopment: 'Serious Web Development',
     selfManagementProgram: 'Self-governance 2020',
+    mvoProxima: 'MVO PROXIMA*',
+    socialTransformation: 'Mindfulness for social transformation',
 
     // Months
     jan: 'January',

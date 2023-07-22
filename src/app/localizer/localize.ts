@@ -72,6 +72,7 @@ export interface ILocalize {
     technamin: string
     imperialCapital: string
     medControl: string
+    bakuriani: string
     yerevan: string
     aveiro: string
 
@@ -142,6 +143,8 @@ export interface ILocalize {
     applicationDevelopment: string
     seriousWebDevelopment: string
     selfManagementProgram: string
+    mvoProxima: string
+    socialTransformation: string
 
     // Months
     jan: string
