@@ -3,44 +3,14 @@
 body {
   text-align: justify;
   @include colorPalette;
-  --body-width: 770px
-}
 
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 20px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-h6 {
-  font-size: 16px;
-}
-
-span {
-  font-size: 14px;
+  --body-width: 770px;
+  --mobile-width: calc(100% - 50px);
 }
 
 a, a:active, a:hover, a:focus {
   text-decoration: none;
   color: inherit;
-}
-
-h1, h2, h3, h4, h5, span, p, a {
-  line-height: 175%;
 }
 
 // Scroll UI
