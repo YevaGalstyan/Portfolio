@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {membership} from '../../../interfaces/data';
+import {membership} from '../../../../../interfaces/data';
 
 @Component({
     selector: 'app-membership-item',

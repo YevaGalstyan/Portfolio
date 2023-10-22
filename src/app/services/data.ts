@@ -43,12 +43,12 @@ export class DataService {
                 this.localize.localize.leadershipSkills,
                 this.localize.localize.conflictResolution,
             ],
-            attachedFiles: [
-                {
-                    fileName: this.localize.localize.attendanceCertificate,
-                    fileLink: 'certificate_self_management.pdf'
-                }
-            ]
+            // attachedFiles: [
+            //     {
+            //         fileName: this.localize.localize.attendanceCertificate,
+            //         fileLink: 'certificate_self_management.pdf'
+            //     }
+            // ]
         },
         {
             imgUrl: 'trainings/seriousWeb.png',
@@ -120,6 +120,12 @@ export class DataService {
                 this.localize.localize.smm,
                 this.localize.localize.adobePhotoshop,
                 this.localize.localize.contentWriting,
+            ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'volunteering_certificate_sc.pdf'
+                }
             ]
         },
 
@@ -136,6 +142,12 @@ export class DataService {
                 this.localize.localize.adobeIllustrator,
                 this.localize.localize.contentWriting,
                 this.localize.localize.photographySkills,
+            ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'scouting_certificate_AGBU.pdf'
+                }
             ]
         }
     ]

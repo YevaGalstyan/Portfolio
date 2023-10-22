@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {DataService} from '../../../services/data';
-import {localize} from '../../../localizer/eng';
-import {ILocalize} from '../../../localizer/localize';
-import {GeneralService} from '../../../services/general.service';
-import {project} from '../../../interfaces/data';
+import {DataService} from '../../../../../services/data';
+import {localize} from '../../../../../localizer/eng';
+import {ILocalize} from '../../../../../localizer/localize';
+import {GeneralService} from '../../../../../services/general.service';
+import {project} from '../../../../../interfaces/data';
 
 @Component({
     selector: 'app-project-item',

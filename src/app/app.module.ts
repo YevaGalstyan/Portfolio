@@ -8,29 +8,11 @@ import {SharedModule} from './shared/shared.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule} from 'ngx-google-analytics';
 import {MatTooltipModule} from '@angular/material/tooltip';
-import {ProjectsModule} from './components/projects/projects.module';
-
-// Components
-import {ProjectsComponent} from './components/projects/projects.component';
-import {EducationComponent} from './components/education/education.component';
-import {MembershipsComponent} from './components/memberships/memberships.component';
-import {ContactComponent} from './components/contact/contact.component';
-import {HomeComponent} from './components/home/home.component';
-import {ColophonComponent} from './components/colophon/colophon.component';
-import {ProjectItemComponent} from './components/projects/project-item/project-item.component';
-import {MembershipItemComponent} from './components/memberships/membership-item/membership-item.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        ProjectsComponent,
-        EducationComponent,
-        MembershipsComponent,
-        ContactComponent,
-        HomeComponent,
-        ColophonComponent,
-        ProjectItemComponent,
-        MembershipItemComponent,
+
     ],
     imports: [
         BrowserModule,
@@ -40,7 +22,6 @@ import {MembershipItemComponent} from './components/memberships/membership-item/
         NgxGoogleAnalyticsModule.forRoot('G-V8DGV3G31Z'),
         NgxGoogleAnalyticsRouterModule,
         MatTooltipModule,
-        ProjectsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

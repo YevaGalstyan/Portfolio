@@ -1,5 +1,5 @@
 import {Component, HostListener} from '@angular/core';
-import {LocalizeService} from '../../localizer/localize.service';
+import {LocalizeService} from '../../../../localizer/localize.service';
 import {Clipboard} from '@angular/cdk/clipboard';
 
 @Component({

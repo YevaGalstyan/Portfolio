@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {position} from '../../../interfaces/data';
+import {position} from '../../../../../interfaces/data';
 
 @Component({
   selector: 'app-position-item',

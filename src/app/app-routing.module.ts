@@ -1,32 +1,15 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
-// Components
-import {ProjectsComponent} from './components/projects/projects.component';
-import {EducationComponent} from './components/education/education.component';
-import {ContactComponent} from './components/contact/contact.component';
-import {HomeComponent} from './components/home/home.component';
-import {MembershipsComponent} from './components/memberships/memberships.component';
-import {ColophonComponent} from './components/colophon/colophon.component';
-
 const routes: Routes = [
-    {path: '', redirectTo: 'home', pathMatch: 'full'},
-
-    {path: 'home', component: HomeComponent},
-    {path: 'work', component: ProjectsComponent},
-
     {
-        path: 'work',
-        loadChildren: () => import('./components/projects/projects.module').then(m => m.ProjectsModule)
+        path: '',
+        loadChildren: () => {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+                return import('./modules/mobile/mobile.module').then(m => m.MobileModule);
+            return import('./modules/desktop/desktop.module').then(m => m.DesktopModule);
+        },
     },
-
-
-    {path: 'education', component: EducationComponent},
-    {path: 'contact', component: ContactComponent},
-    {path: 'memberships', component: MembershipsComponent},
-    {path: 'colophon', component: ColophonComponent},
-
-    {path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({
