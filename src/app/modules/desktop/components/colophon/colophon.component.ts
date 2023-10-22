@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {LocalizeService} from '../../localizer/localize.service';
+import {LocalizeService} from '../../../../localizer/localize.service';
 
 @Component({
     selector: 'app-colophon',

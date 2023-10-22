@@ -1,50 +1,44 @@
-@media all and (min-width: 800px) {
-
-  .main_block {
-    width: var(--body-width);
-  }
-
-  .body_header_block {
-    justify-content: space-between;
-    gap: 48px;
-  }
-
-  .personal_img img {
-    margin-top: -34px;
-  }
+.main_block {
+  width: var(--body-width);
 }
 
-@media all and (min-width: 800px) {
+.body_header_block {
+  justify-content: space-between;
+  gap: 48px;
+}
 
-  h1 {
-    font-size: 48px;
-  }
+.personal_img img {
+  margin-top: -34px;
+}
 
-  h2 {
-    font-size: 30px;
-  }
+h1 {
+  font-size: 48px;
+}
 
-  h3 {
-    font-size: 24px;
-  }
+h2 {
+  font-size: 30px;
+}
 
-  h4 {
-    font-size: 20px;
-  }
+h3 {
+  font-size: 24px;
+}
 
-  h5 {
-    font-size: 18px;
-  }
+h4 {
+  font-size: 20px;
+}
 
-  h6 {
-    font-size: 16px;
-  }
+h5 {
+  font-size: 18px;
+}
 
-  span {
-    font-size: 14px;
-  }
+h6 {
+  font-size: 16px;
+}
 
-  h1, h2, h3, h4, h5, span, p, a {
-    line-height: 175%;
-  }
+span {
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, span, p, a {
+  line-height: 175%;
 }

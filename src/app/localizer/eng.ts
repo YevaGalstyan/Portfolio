@@ -7,6 +7,8 @@ export const localize: ILocalize = {
     copy: 'copy',
     copied: 'copied!',
     underConstruction: 'This page is currently being developed.',
+    mobileConstruction: 'Mobile version is currently under construction',
+    accessDesktop: 'Try to access webpage with a desktop device',
 
     // Menu
     about: 'About',
@@ -38,7 +40,7 @@ export const localize: ILocalize = {
 
     // All rights reserved
     currentYear: '2023',
-    at: '©',
+    at: 'Copyright ©',
 
     // Socials
     linkedin: 'Linkedin',

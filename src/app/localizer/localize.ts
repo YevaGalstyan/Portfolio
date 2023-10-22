@@ -4,6 +4,8 @@ export interface ILocalize {
     copy: string
     copied: string
     underConstruction: string
+    mobileConstruction: string
+    accessDesktop: string
 
     // Menu
     about: string;

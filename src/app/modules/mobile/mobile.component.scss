@@ -1,0 +1,15 @@
+.under_construction {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+
+  span {
+    color: var(--gray-500);
+    text-align: center;
+    font-family: "Nunito-Light Sans";
+  }
+}
