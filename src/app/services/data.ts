@@ -14,12 +14,33 @@ export class DataService {
     readonly trainings: membership[] = [
         {
             imgUrl: 'trainings/erasmus.jpeg',
-            url: ' https://seriousweb.org/',
+            url: 'https://yic.am/',
+            positionName: this.localize.localize.lifeAfterMobility,
+            period: this.period(2023, this.localize.localize.nov, 2023, this.localize.localize.nov, 20, 27),
+            name: this.localize.localize.yic,
+            location: this.localize.localize.gyumri,
+            skills: [
+                this.localize.localize.erasmusMobility,
+                this.localize.localize.mentorship,
+                this.localize.localize.coaching,
+                this.localize.localize.nonFormal,
+            ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'youthpassGyumri.pdf'
+                }
+            ]
+        },
+        {
+            imgUrl: 'trainings/erasmus.jpeg',
+            url: '',
             positionName: this.localize.localize.socialTransformation,
             period: this.period(2022, this.localize.localize.may, 2022, this.localize.localize.may, 7, 13),
             name: this.localize.localize.mvoProxima,
             location: this.localize.localize.bakuriani,
             skills: [
+                this.localize.localize.erasmusMobility,
                 this.localize.localize.conflictSolving,
                 this.localize.localize.coaching,
                 this.localize.localize.leadershipSkills,
@@ -27,13 +48,13 @@ export class DataService {
             attachedFiles: [
                 {
                     fileName: this.localize.localize.attendanceCertificate,
-                    fileLink: 'Youthpass.pdf'
+                    fileLink: 'YouthpassGeorgia.pdf'
                 }
             ]
         },
         {
             imgUrl: 'trainings/ysuSC.png',
-            url: ' https://seriousweb.org/',
+            url: 'https://www.facebook.com/YSUSC',
             positionName: this.localize.localize.selfManagementProgram,
             period: this.period(2020, this.localize.localize.feb, 2020, this.localize.localize.mar, 28, 3),
             name: this.localize.localize.ysuSC,
@@ -43,16 +64,16 @@ export class DataService {
                 this.localize.localize.leadershipSkills,
                 this.localize.localize.conflictResolution,
             ],
-            // attachedFiles: [
-            //     {
-            //         fileName: this.localize.localize.attendanceCertificate,
-            //         fileLink: 'certificate_self_management.pdf'
-            //     }
-            // ]
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'certificate_self_management.pdf'
+                }
+            ]
         },
         {
             imgUrl: 'trainings/seriousWeb.png',
-            url: ' https://seriousweb.org/',
+            url: '',
             positionName: this.localize.localize.applicationDevelopment,
             period: this.period(2020, this.localize.localize.jul, 2020, this.localize.localize.nov),
             name: this.localize.localize.seriousWebDevelopment,
