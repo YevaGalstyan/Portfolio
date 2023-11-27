@@ -10,9 +10,11 @@
                     <span>{{membership.period}}</span>
                 </div>
                 <div class="info_subheader">
-                    <a target="_blank" [href]="membership.url">
+                    <a *ngIf="membership.url; else noLink" target="_blank" [href]="membership.url">
                         <h5>{{membership.name}}</h5>
                     </a>
+
+                    <ng-template #noLink><h5>{{membership.name}}</h5></ng-template>
                     <div class="location">
                         <span>{{membership.location}}</span>
                         <img src="../../../../../../assets/images/icons/location.svg">

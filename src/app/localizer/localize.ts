@@ -68,6 +68,9 @@ export interface ILocalize {
     teamWork: string
     coaching: string
     conflictSolving: string
+    mentorship: string
+    nonFormal: string
+    erasmusMobility: string
 
     // Names
     inSource: string,
@@ -77,6 +80,7 @@ export interface ILocalize {
     bakuriani: string
     yerevan: string
     aveiro: string
+    gyumri: string
 
     // Info introductions
     websiteDevelopment: string
@@ -147,6 +151,8 @@ export interface ILocalize {
     selfManagementProgram: string
     mvoProxima: string
     socialTransformation: string
+    lifeAfterMobility: string
+    yic: string
 
     // Months
     jan: string

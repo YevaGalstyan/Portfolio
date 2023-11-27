@@ -72,6 +72,9 @@ export const localize: ILocalize = {
     teamWork: 'Team work',
     conflictSolving: 'Conflict solving',
     coaching: 'Coaching',
+    mentorship: 'Mentorship',
+    nonFormal: 'Nor-formal education',
+    erasmusMobility: 'Erasmus+ Mobility',
 
     // Names
     inSource: 'Insource.am',
@@ -81,6 +84,7 @@ export const localize: ILocalize = {
     yerevan: 'Yerevan, Armenia',
     bakuriani: 'Bakuriani, Georgia',
     aveiro: 'Aveiro, Portugal',
+    gyumri: 'Gyumri, Armenia',
 
     // Info introductions
     websiteDevelopment: 'This website is developed by Yeva Galstyan.',
@@ -157,6 +161,8 @@ export const localize: ILocalize = {
     selfManagementProgram: 'Self-governance 2020',
     mvoProxima: 'MVO PROXIMA*',
     socialTransformation: 'Mindfulness for social transformation',
+    lifeAfterMobility: 'Life after mobility projects',
+    yic: 'Youth Initiative Centre',
 
     // Months
     jan: 'January',
