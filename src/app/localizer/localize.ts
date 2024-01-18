@@ -71,6 +71,8 @@ export interface ILocalize {
     mentorship: string
     nonFormal: string
     erasmusMobility: string
+    fakeNews: string
+    criticalThinking: string
 
     // Names
     inSource: string,
@@ -81,6 +83,7 @@ export interface ILocalize {
     yerevan: string
     aveiro: string
     gyumri: string
+    bilbao: string
 
     // Info introductions
     websiteDevelopment: string
@@ -152,7 +155,9 @@ export interface ILocalize {
     mvoProxima: string
     socialTransformation: string
     lifeAfterMobility: string
+    fightFakeNews: string
     yic: string
+    aisd: string
 
     // Months
     jan: string

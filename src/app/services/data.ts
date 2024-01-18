@@ -15,6 +15,26 @@ export class DataService {
         {
             imgUrl: 'trainings/erasmus.jpeg',
             url: 'https://yic.am/',
+            positionName: this.localize.localize.fightFakeNews,
+            period: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.jan, 7, 13),
+            name: this.localize.localize.aisd,
+            location: this.localize.localize.bilbao,
+            skills: [
+                this.localize.localize.erasmusMobility,
+                this.localize.localize.fakeNews,
+                this.localize.localize.nonFormal,
+                this.localize.localize.criticalThinking,
+            ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'YouthpassSpain.pdf'
+                }
+            ]
+        },
+        {
+            imgUrl: 'trainings/erasmus.jpeg',
+            url: 'https://yic.am/',
             positionName: this.localize.localize.lifeAfterMobility,
             period: this.period(2023, this.localize.localize.nov, 2023, this.localize.localize.nov, 20, 27),
             name: this.localize.localize.yic,

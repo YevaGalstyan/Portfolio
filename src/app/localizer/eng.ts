@@ -75,6 +75,8 @@ export const localize: ILocalize = {
     mentorship: 'Mentorship',
     nonFormal: 'Nor-formal education',
     erasmusMobility: 'Erasmus+ Mobility',
+    fakeNews: 'Fake News',
+    criticalThinking: 'Critical Thinking',
 
     // Names
     inSource: 'Insource.am',
@@ -85,6 +87,7 @@ export const localize: ILocalize = {
     bakuriani: 'Bakuriani, Georgia',
     aveiro: 'Aveiro, Portugal',
     gyumri: 'Gyumri, Armenia',
+    bilbao: 'Bilbao, Spain',
 
     // Info introductions
     websiteDevelopment: 'This website is developed by Yeva Galstyan.',
@@ -163,6 +166,8 @@ export const localize: ILocalize = {
     socialTransformation: 'Mindfulness for social transformation',
     lifeAfterMobility: 'Life after mobility projects',
     yic: 'Youth Initiative Centre',
+    fightFakeNews: 'Fight fake news in social media',
+    aisd: 'Association of Social Integration and Development',
 
     // Months
     jan: 'January',
