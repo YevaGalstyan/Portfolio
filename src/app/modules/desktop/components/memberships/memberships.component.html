@@ -1,5 +1,5 @@
 <div class="body_block">
-    <!--Professional Experience-->
+    <!--Memberships-->
     <div class="body_header">
         <h4>{{localize.localize.membership}}</h4>
         <span>{{localize.localize.volunteerExperience}}</span>
@@ -9,4 +9,18 @@
             *ngFor="let membership of dataService.memberships"
             [membership]="membership">
     </app-membership-item>
+
+    <!--Conferences, Hackathons and Seminars-->
+    <div class="body_block">
+        <div class="body_header">
+            <h4>{{localize.localize.conferences}}</h4>
+            <span>{{localize.localize.conferencesExperience}}</span>
+        </div>
+
+        <app-membership-item
+                *ngFor="let membership of dataService.conferences"
+                [membership]="membership">
+        </app-membership-item>
+    </div>
+
 </div>

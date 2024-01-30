@@ -38,11 +38,17 @@ export interface membership {
     name: string
     location: string
     description?: string
-    attachedFiles?: attachment[]
+    attachedFiles?: attachment[],
+    publications?: publications[]
     skills?: string[]
 }
 
 export interface attachment {
     fileName: string
     fileLink: string
+}
+
+export interface publications {
+    icon: string
+    link: string
 }

@@ -132,3 +132,19 @@
   gap: 30px;
   flex-wrap: wrap;
 }
+
+.publications_block {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .tag_block {
+    margin-top: 0;
+  }
+
+  span {
+    font-weight: bold;
+    color: var(--gray-600);
+  }
+}
