@@ -15,6 +15,7 @@ export const localize: ILocalize = {
     education: 'Education',
     work: 'Work',
     membership: 'Memberships',
+    conferences: 'Conferences, Hackathons and Seminars',
     contact: 'Contact',
     home: 'Home',
     colophon: 'Colophon',
@@ -66,8 +67,10 @@ export const localize: ILocalize = {
     photographySkills: 'Photography skills',
     contentWriting: 'Content Writing',
     smm: 'SMM skills',
-    managementSkills: 'Management skills',
-    leadershipSkills: 'Leadership skills',
+    managementSkills: 'Management',
+    publicSpeech: 'Public speech',
+    networking: 'Networking',
+    leadershipSkills: 'Leadership',
     conflictResolution: 'Conflict resolution',
     teamWork: 'Team work',
     conflictSolving: 'Conflict solving',
@@ -84,6 +87,7 @@ export const localize: ILocalize = {
     imperialCapital: 'Imperial Capital Group',
     medControl: 'Med Control',
     yerevan: 'Yerevan, Armenia',
+    chisinau: 'Chisinau, Moldova',
     bakuriani: 'Bakuriani, Georgia',
     aveiro: 'Aveiro, Portugal',
     gyumri: 'Gyumri, Armenia',
@@ -139,13 +143,20 @@ export const localize: ILocalize = {
 
     // Membership
     volunteerExperience: 'Displayed below are comprehensive insights into my volunteering experience, showcasing the various aspects of my involvement and contributions:',
+    conferencesExperience: 'Displayed below find information on the seminars, conferences and hackathons I have attended during my professional and academic career:',
     scout: 'Volunteer / Scout',
     agbu: 'AGBU',
     agbuDescription: 'Encompassing photography services for scouting events, writing articles for the monthly scouting magazine, and participating in the management of social media platforms.',
     ysuIAMSC: 'YSU IAM Student Council',
+    eap: 'EaP Civil Society Facility',
     ysuSC: 'YSU Student Council',
     mediaHead: 'Head of the media committee',
+    frontEndDeveloper: 'Front-end developer',
     ysuDescription: 'Mentoring and leading a team dedicated to social media management as well as facilitating the optimization of workflow procedures, fostering a productive and efficient work environment withing the team.',
+    eapDescription: 'Over the course of three days, tech individuals collaborate with mentors to\n' +
+        'devise digital solutions aimed at addressing community needs. These solutions empower citizens to\n' +
+        'effectively oversee their governments and contribute to enhancing public services within their respective\n' +
+        'nations.',
 
     // Education
     educationDescription: 'Below is the overview of my academic history, including my educational background and ',

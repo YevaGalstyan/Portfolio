@@ -193,6 +193,35 @@ export class DataService {
         }
     ]
 
+    readonly conferences: membership[] = [
+        {
+            imgUrl: 'conferences/EAP-logo.png',
+            url: 'https://ict.eapcivilsociety.eu/en#',
+            positionName: this.localize.localize.frontEndDeveloper,
+            period: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.jan, 26, 29),
+            name: this.localize.localize.eap,
+            location: this.localize.localize.chisinau,
+            description: this.localize.localize.ysuDescription,
+            skills: [
+                this.localize.localize.managementSkills,
+                this.localize.localize.figma,
+                this.localize.localize.networking,
+                this.localize.localize.publicSpeech,
+            ],
+            publications: [
+                {
+                    link: 'https://www.facebook.com/EaPCivilSociety/posts/pfbid02tV6poEVUwZw13iN7e1tLAex1jgPxUaYjXNFbqz7tqGkWKynazy4Dzb3gqQYsoG1El',
+                    icon: 'icons/facebook.png'
+                },
+                {
+                    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7158192162403225601/',
+                    icon: 'icons/linkedin.png'
+                }
+            ],
+            attachedFiles: []
+        },
+    ]
+
     readonly feedbacks: feedback[] = [
         {
             imgUrl: 'andrey.jpeg',

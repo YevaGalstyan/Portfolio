@@ -35,4 +35,15 @@
            *ngFor="let file of membership.attachedFiles"
            class="file_item"><span>{{file.fileName}}</span></a>
     </div>
+
+    <div class="publications_block" *ngIf="membership.publications?.length">
+        <span>Publications</span>
+        <div class="tag_block">
+            <a target="_blank" [href]="item.link"
+               *ngFor="let item of membership.publications">
+                <img width="20px" [src]="'assets/images/' + item.icon">
+            </a>
+        </div>
+    </div>
+
 </div>

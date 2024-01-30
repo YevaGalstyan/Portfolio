@@ -13,6 +13,7 @@ export interface ILocalize {
     work: string
     home: string
     membership: string
+    conferences: string
     contact: string
     colophon: string
     projects: string
@@ -63,7 +64,9 @@ export interface ILocalize {
     contentWriting: string
     smm: string
     managementSkills: string
+    publicSpeech: string
     leadershipSkills: string
+    networking: string
     conflictResolution: string
     teamWork: string
     coaching: string
@@ -81,6 +84,7 @@ export interface ILocalize {
     medControl: string
     bakuriani: string
     yerevan: string
+    chisinau: string
     aveiro: string
     gyumri: string
     bilbao: string
@@ -129,13 +133,17 @@ export interface ILocalize {
 
     // Membership
     volunteerExperience: string
+    conferencesExperience: string
     scout: string
     agbu: string
     agbuDescription: string
     ysuIAMSC: string
+    eap: string
     ysuSC: string
     mediaHead: string
+    frontEndDeveloper: string
     ysuDescription: string
+    eapDescription: string
 
     // Education
     educationDescription: string
