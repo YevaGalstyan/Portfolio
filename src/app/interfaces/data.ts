@@ -2,7 +2,7 @@ export interface project {
     // Details - inner page
     name: string
     date: string
-    link: string
+    link?: string
     imgUrls: string[]
     description: string
     github?: string

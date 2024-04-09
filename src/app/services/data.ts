@@ -283,7 +283,7 @@ export class DataService {
             date: this.period(2021, this.localize.localize.may, 2021, this.localize.localize.sep),
             description: this.localize.localize.tradingService,
             imgUrls: ['trade.png'],
-            link: 'https://imperialcg.com/',
+            github: 'https://github.com/YevaGalstyan/trade-front',
 
             // Outer - card information
             cardHeader: this.localize.localize.imperialCapital,

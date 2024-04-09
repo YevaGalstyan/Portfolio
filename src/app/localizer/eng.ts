@@ -84,7 +84,7 @@ export const localize: ILocalize = {
     // Names
     inSource: 'Insource.am',
     technamin: 'Technamin',
-    imperialCapital: 'Imperial Capital Group',
+    imperialCapital: 'Trading platform',
     medControl: 'Med Control',
     yerevan: 'Yerevan, Armenia',
     chisinau: 'Chisinau, Moldova',
@@ -119,7 +119,7 @@ export const localize: ILocalize = {
     providingSupportInSource: 'Providing support for a pre-existing administrative panels for an online banking customer support team. Developing an accounting application specifically designed for the online banking accounting team.',
     providingSupportTechnamin: 'Managing the upkeep of an online gaming platform and designing an administrative dashboard for gaming staff members.',
     projectContributions: 'Below is a compilation of my personal projects and collaborative contributions over the past few years:',
-    tradingService: 'Imperial Capital Group is a platform offering services for conducting cryptocurrency trading in a safe and protected environment.' +
+    tradingService: 'This is a platform offering services for conducting cryptocurrency trading in a safe and protected environment.' +
         ' The platform offers a user-friendly interface, making it easy for both beginners and experienced traders to navigate and execute trades effectively.' +
         ' It provides a seamless trading experience with real-time market data and intuitive trading tools.',
     medControlService: 'Introducing Med Control, a comprehensive platform designed exclusively for private medical institutions to efficiently manage and securely maintain their journal records. ' +
