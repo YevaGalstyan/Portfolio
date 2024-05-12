@@ -1,4 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {localize} from '../../localizer/eng';
+import {project} from '../../interfaces/data';
 
 @Component({
   selector: 'app-card',
@@ -7,10 +9,8 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class CardComponent {
 
-  @Input() cardHeader!: string
-  @Input() cardInfo!: string
-
-  @Input() imgUrl!: string
+  @Input() card!: project;
 
   @Output() cardClicked: EventEmitter<boolean> = new EventEmitter<boolean>();
+  protected readonly localize = localize;
 }

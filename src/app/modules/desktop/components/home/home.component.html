@@ -43,17 +43,38 @@
 
     </div>
 
-    <!--Professional experience -->
+    <!--Education -->
     <div style="margin-top: 20px" class="body_block">
-        <!--Professional Experience-->
+
         <div class="body_header">
-            <h4>{{localize.localize.currentPosition}}</h4>
+            <h4>{{localize.localize.educationAndTrainings}}</h4>
+            <span>{{localize.localize.proceedToEducationPage}}
+                <a routerLink="/education"><span>{{localize.localize.education}}</span></a>
+                <span>{{localize.localize.toGainInformation}}</span>
+            </span>
+        </div>
+
+        <app-membership-item
+                *ngFor="let education of dataService.education | slice: 0: 1"
+                [membership]="education">
+        </app-membership-item>
+
+        <app-membership-item
+                *ngFor="let training of dataService.trainings | slice: 0: 1"
+                [membership]="training">
+        </app-membership-item>
+    </div>
+
+    <!--Professional experience -->
+    <div class="body_block">
+
+        <div class="body_header">
+            <h4>{{localize.localize.professionalExperience}}</h4>
             <span>{{localize.localize.proceedToWorkPage}}
                 <a routerLink="/work"><span>{{localize.localize.work}}</span></a>
                 <span>{{localize.localize.toGainInformation}}</span>
             </span>
         </div>
-
 
         <app-position-item
                 *ngFor="let position of dataService.positions | slice: 0: 1"
@@ -65,16 +86,17 @@
     <div style="margin-top: 20px" class="body_block">
         <div class="body_header">
             <h4 style="text-transform: capitalize">{{localize.localize.recentProject}}</h4>
-            <span>{{localize.localize.recentProjectList}}</span>
+            <span>{{localize.localize.recentProjectList}}
+                <a routerLink="/work"><span>{{localize.localize.work}}</span></a>
+                <span>{{localize.localize.toGainInformation}}</span>
+            </span>
         </div>
 
         <div class="card_block">
             <app-card
-                    *ngFor="let item of dataService.projectsDetails | slice:0:1; let i=index"
-                    (cardClicked)="generalService.navigate('work/' + (i+1))"
-                    [imgUrl]="item.outerImgUrl"
-                    [cardHeader]="item.cardHeader"
-                    [cardInfo]="item.cardInfo">
+                    *ngFor="let item of dataService.projectsDetails | slice:0:2; let i=index"
+                    [card]="item"
+                    (cardClicked)="generalService.navigate('work/' + (i+1))">
             </app-card>
         </div>
     </div>

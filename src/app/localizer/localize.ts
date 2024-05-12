@@ -6,10 +6,12 @@ export interface ILocalize {
     underConstruction: string
     mobileConstruction: string
     accessDesktop: string
+    links: string
 
     // Menu
     about: string;
     education: string
+    educationAndTrainings: string
     work: string
     home: string
     membership: string
@@ -64,6 +66,8 @@ export interface ILocalize {
     contentWriting: string
     smm: string
     managementSkills: string
+    organizationalSkills: string
+    eventManagement: string
     publicSpeech: string
     leadershipSkills: string
     networking: string
@@ -76,18 +80,24 @@ export interface ILocalize {
     erasmusMobility: string
     fakeNews: string
     criticalThinking: string
+    reactJs: string
+    redux: string
+    reduxToolkit: string
+    webpack: string
 
     // Names
     inSource: string,
     technamin: string
     imperialCapital: string
     medControl: string
+    eCommerceApp: string
     bakuriani: string
     yerevan: string
     chisinau: string
     aveiro: string
     gyumri: string
     bilbao: string
+    fulda: string
 
     // Info introductions
     websiteDevelopment: string
@@ -121,6 +131,7 @@ export interface ILocalize {
     tradingServiceShort: string
     medControlServiceShort: string
     openProject: string
+    eCommerceShort: string
 
     // About
     IAmYevaGalstyan: string
@@ -130,6 +141,7 @@ export interface ILocalize {
     alsoWorking: string
     proceedToWorkPage: string
     toGainInformation: string
+    proceedToEducationPage: string
 
     // Membership
     volunteerExperience: string
@@ -144,6 +156,9 @@ export interface ILocalize {
     frontEndDeveloper: string
     ysuDescription: string
     eapDescription: string
+    notionCampusLeader: string
+    notion: string
+    notionDescription: string
 
     // Education
     educationDescription: string
@@ -153,10 +168,15 @@ export interface ILocalize {
     ysuFaculty: string
     highSchool: string
     polytechUniversity: string
+    fuldaMastersUniversity: string
+    fuldaUniversity: string
 
     // Trainings
     trainingDescription: string
     attendanceCertificate: string
+    diploma: string
+    enrollmentCertificate: string
+    referenceLetter: string
     applicationDevelopment: string
     seriousWebDevelopment: string
     selfManagementProgram: string
@@ -166,6 +186,8 @@ export interface ILocalize {
     fightFakeNews: string
     yic: string
     aisd: string
+    reactLevelUp: string
+    sunnySchool: string
 
     // Months
     jan: string

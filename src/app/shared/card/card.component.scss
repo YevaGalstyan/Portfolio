@@ -1,10 +1,7 @@
 .card_item {
+  width: 100%;
   display: flex;
   flex-direction: column;
-
-  .main_img {
-    width: 100%;
-  }
 
   .card_info {
     display: flex;
@@ -18,10 +15,17 @@
     .card_header {
       display: flex;
       justify-content: space-between;
+      align-content: center;
+    }
 
-      img {
-        cursor: pointer;
-      }
+    .card_links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    a span {
+      color: var(--purple-500)
     }
 
     h6 {
@@ -34,4 +38,8 @@
       font-family: "Nunito-Light Sans";
     }
   }
+}
+
+img {
+  cursor: pointer;
 }
