@@ -52,3 +52,18 @@ export interface links {
     icon: string
     link: string
 }
+
+export interface language {
+    name: string
+    level: number
+}
+
+export enum languageLevels {
+    a1 = 1,
+    a2 = 2,
+    b1 = 3,
+    b2 = 4,
+    c1 = 5,
+    c2 = 6
+}
+

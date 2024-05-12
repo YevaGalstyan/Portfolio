@@ -10,6 +10,7 @@ export const localize: ILocalize = {
     mobileConstruction: 'Mobile version is currently under construction',
     accessDesktop: 'Try to access webpage with a desktop device',
     links: 'Useful links',
+    languageProficiency: 'Language proficiency',
 
     // Menu
     about: 'About',
@@ -216,5 +217,20 @@ export const localize: ILocalize = {
     nov: 'November',
     dec: 'December',
 
-    present: 'Present'
+    present: 'Present',
+
+    // Languages
+    english: 'English',
+    armenian: 'Armenian',
+    russian: 'Russian',
+    german: 'German',
+
+    // Language levels
+    a1: 'A1',
+    a2: 'A2',
+    b1: 'B1',
+    b2: 'B2',
+    c1: 'C1',
+    c2: 'C2'
+
 }

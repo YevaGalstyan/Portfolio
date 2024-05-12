@@ -1,0 +1,11 @@
+<div class="language_section">
+    <div class="language_block" *ngFor="let item of dataService.languages">
+        <h5>{{ item.name }}</h5>
+        <div class="language_item">
+           <div [ngStyle]="{'width': 'calc((100%' + ' / ' + 6 + ')' + ' * ' + item.level + ')'}" class="language_process"></div>
+        </div>
+        <div class="language_levels">
+            <span *ngFor="let level of dataService.languageLevels" >{{ level }}</span>
+        </div>
+    </div>
+</div>

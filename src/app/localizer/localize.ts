@@ -25,6 +25,7 @@ export interface ILocalize {
     recentProject: string
     nextProject: string
     trainings: string
+    languageProficiency: string
 
     // Feedbacks
     feedbacks: string
@@ -204,4 +205,18 @@ export interface ILocalize {
     dec: string
 
     present: string
+
+    // Languages
+    english: string
+    armenian: string
+    russian: string
+    german: string
+
+    // Language levels
+    a1: string
+    a2: string
+    b1: string
+    b2: string
+    c1: string
+    c2: string
 }
