@@ -13,6 +13,27 @@ export class DataService {
 
     readonly trainings: membership[] = [
         {
+            imgUrl: 'trainings/react.png',
+            url: 'https://sunnyschool.am/level-up/',
+            positionName: this.localize.localize.reactLevelUp,
+            period: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.may, 20, 3),
+            name: this.localize.localize.sunnySchool,
+            location: this.localize.localize.yerevan,
+            skills: [
+                this.localize.localize.reactJs,
+                this.localize.localize.redux,
+                this.localize.localize.reduxToolkit,
+                this.localize.localize.typescript,
+                this.localize.localize.webpack,
+            ],
+            links: [
+                {
+                    link: 'https://github.com/YevaGalstyan/react-app',
+                    icon: 'icons/github-mark.svg'
+                },
+            ],
+        },
+        {
             imgUrl: 'trainings/erasmus.jpeg',
             url: 'https://yic.am/',
             positionName: this.localize.localize.fightFakeNews,
@@ -110,6 +131,22 @@ export class DataService {
 
 
     readonly education: membership[] = [
+        // Fulda University
+        {
+            imgUrl: 'education/fuldaUni.jpeg',
+            url: 'https://www.hs-fulda.de/',
+            positionName: this.localize.localize.fuldaMastersUniversity,
+            period: this.period(2024, this.localize.localize.apr),
+            name: this.localize.localize.fuldaUniversity,
+            location: this.localize.localize.fulda,
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.enrollmentCertificate,
+                    fileLink: 'enrollment_Fulda.pdf'
+                }
+            ]
+        },
+
         // Aveiro University
         {
             imgUrl: 'education/aveiroUni.png',
@@ -134,6 +171,12 @@ export class DataService {
             period: this.period(2019, this.localize.localize.sep, 2023, this.localize.localize.may),
             name: this.localize.localize.yerevanUniversity,
             location: this.localize.localize.yerevan,
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.diploma,
+                    fileLink: 'university_diploma.pdf'
+                }
+            ]
         },
 
         // Polytechnic High School
@@ -148,6 +191,21 @@ export class DataService {
     ]
 
     readonly memberships: membership[] = [
+        {
+            imgUrl: 'memberships/notion.png',
+            url: 'https://www.notion.so/notion/Notion-Community-04f306fbf59a413fae15f42e2a1ab029',
+            positionName: this.localize.localize.notionCampusLeader,
+            period: this.period(2024, this.localize.localize.may),
+            name: this.localize.localize.notion,
+            location: this.localize.localize.fulda,
+            description: this.localize.localize.notionDescription,
+            skills: [
+                this.localize.localize.managementSkills,
+                this.localize.localize.organizationalSkills,
+                this.localize.localize.eventManagement,
+                this.localize.localize.networking
+            ],
+        },
         {
             imgUrl: 'memberships/ysuSC.jpeg',
             url: 'https://www.facebook.com/kirarakan.page',
@@ -186,7 +244,7 @@ export class DataService {
             ],
             attachedFiles: [
                 {
-                    fileName: this.localize.localize.attendanceCertificate,
+                    fileName: this.localize.localize.referenceLetter,
                     fileLink: 'scouting_certificate_AGBU.pdf'
                 }
             ]
@@ -208,7 +266,7 @@ export class DataService {
                 this.localize.localize.networking,
                 this.localize.localize.publicSpeech,
             ],
-            publications: [
+            links: [
                 {
                     link: 'https://www.facebook.com/EaPCivilSociety/posts/pfbid02tV6poEVUwZw13iN7e1tLAex1jgPxUaYjXNFbqz7tqGkWKynazy4Dzb3gqQYsoG1El',
                     icon: 'icons/facebook.png'
@@ -234,7 +292,6 @@ export class DataService {
     readonly positions: position[] = [
         {
             positionName: this.localize.localize.mid,
-            period: this.period(2021, this.localize.localize.oct),
             companyName: this.localize.localize.inSource,
             location: this.localize.localize.yerevan,
             description: this.localize.localize.providingSupportInSource,
@@ -265,16 +322,27 @@ export class DataService {
     readonly projectsDetails: project[] = [
         {
             // Details - inner page
+            date: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.may),
+            github: 'https://github.com/YevaGalstyan/E-commerce-react',
+
+            // Outer - card information
+            cardHeader: this.localize.localize.eCommerceApp,
+            cardInfo: this.localize.localize.eCommerceShort,
+            innerPage: false
+        },
+
+        {
+            // Details - inner page
             name: this.localize.localize.medControl + ' / МЕД УПРАВЛЕНИЕ',
-            date: this.period(2022, this.localize.localize.nov),
+            date: this.period(2022, this.localize.localize.nov, 2024, this.localize.localize.jan),
             description: this.localize.localize.medControlService,
             imgUrls: ['med.png', 'med3.png', 'med1.png', 'med2.png'],
             link: 'https://app.med-upravlenie.ru/',
 
             // Outer - card information
             cardHeader: this.localize.localize.medControl,
-            outerImgUrl: '/projects/med_small.png',
-            cardInfo: this.localize.localize.medControlServiceShort
+            cardInfo: this.localize.localize.medControlServiceShort,
+            innerPage: true
         },
 
         {
@@ -283,12 +351,12 @@ export class DataService {
             date: this.period(2021, this.localize.localize.may, 2021, this.localize.localize.sep),
             description: this.localize.localize.tradingService,
             imgUrls: ['trade.png'],
-            link: 'https://imperialcg.com/',
+            github: 'https://github.com/YevaGalstyan/trade-front',
 
             // Outer - card information
             cardHeader: this.localize.localize.imperialCapital,
-            outerImgUrl: '/projects/trade_small.png',
-            cardInfo: this.localize.localize.tradingServiceShort
+            cardInfo: this.localize.localize.tradingServiceShort,
+            innerPage: true
         },
     ]
 

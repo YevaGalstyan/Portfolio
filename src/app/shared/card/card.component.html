@@ -1,10 +1,24 @@
 <div class="card_item">
-    <img class="main_img" [src]="'assets/images/' + imgUrl">
     <div class="card_info">
         <div class="card_header">
-            <h6>{{cardHeader}}</h6>
-            <img (click)="cardClicked.emit(true)" width="20" src="assets/images/icons/openGray.svg">
+            <h6>{{card.cardHeader}}</h6>
+            <div class="card_links">
+                <span>{{card.date}}</span>
+                <span *ngIf="card.link">•</span>
+                <a *ngIf="card.link" target="_blank" [href]="card.link">
+                    <span>{{localize.openProject}}</span>
+                </a>
+                <span *ngIf="card.github">•</span>
+                <a *ngIf="card.github" target="_blank" [href]="card.github">
+                    <img width="20px" src="../../../../../../assets/images/icons/github-mark.svg">
+                </a>
+            </div>
         </div>
-        <span>{{cardInfo}}</span>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+            <span>{{card.cardInfo}}</span>
+            <div *ngIf="card.innerPage" style="display: flex; justify-content: flex-end">
+                <img (click)="cardClicked.emit(true)" width="20" src="assets/images/icons/openGray.svg">
+            </div>
+        </div>
     </div>
 </div>

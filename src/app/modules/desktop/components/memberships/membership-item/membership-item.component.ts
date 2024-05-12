@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {membership} from '../../../../../interfaces/data';
+import {localize} from '../../../../../localizer/eng';
 
 @Component({
     selector: 'app-membership-item',
@@ -8,4 +9,5 @@ import {membership} from '../../../../../interfaces/data';
 })
 export class MembershipItemComponent {
     @Input() membership!: membership
+    protected readonly localize = localize;
 }

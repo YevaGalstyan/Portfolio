@@ -1,21 +1,21 @@
 export interface project {
     // Details - inner page
-    name: string
+    name?: string
     date: string
-    link: string
-    imgUrls: string[]
-    description: string
+    link?: string
+    imgUrls?: string[]
+    description?: string
     github?: string
 
     // Outer - card information
     cardHeader: string
-    outerImgUrl: string
-    cardInfo: string
+    cardInfo: string;
+    innerPage: boolean
 }
 
 export interface position {
     positionName: string
-    period: string
+    period?: string
     companyName: string
     location: string
     description: string
@@ -39,7 +39,7 @@ export interface membership {
     location: string
     description?: string
     attachedFiles?: attachment[],
-    publications?: publications[]
+    links?: links[]
     skills?: string[]
 }
 
@@ -48,7 +48,7 @@ export interface attachment {
     fileLink: string
 }
 
-export interface publications {
+export interface links {
     icon: string
     link: string
 }

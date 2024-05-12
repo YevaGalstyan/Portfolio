@@ -22,9 +22,7 @@
         <div class="card_block">
             <app-card *ngFor="let item of dataService.projectsDetails; let i=index"
                     (cardClicked)="generalService.navigate('work/' + (i+1));"
-                    [imgUrl]="item.outerImgUrl"
-                    [cardHeader]="item.cardHeader"
-                    [cardInfo]="item.cardInfo">
+                    [card]="item">
             </app-card>
         </div>
     </div>

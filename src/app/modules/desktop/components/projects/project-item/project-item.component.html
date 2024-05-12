@@ -4,8 +4,8 @@
         <h2>{{info.name}}</h2>
         <div class="project_subtitle">
             <span>{{info.date}}</span>
-            <span>•</span>
-            <a target="_blank" [href]="info.link">
+            <span *ngIf="info.link">•</span>
+            <a *ngIf="info.link" target="_blank" [href]="info.link">
                 <span>{{localize.openProject}}</span>
             </a>
             <span *ngIf="info.github">•</span>

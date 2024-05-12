@@ -9,10 +9,12 @@ export const localize: ILocalize = {
     underConstruction: 'This page is currently being developed.',
     mobileConstruction: 'Mobile version is currently under construction',
     accessDesktop: 'Try to access webpage with a desktop device',
+    links: 'Useful links',
 
     // Menu
     about: 'About',
     education: 'Education',
+    educationAndTrainings: 'Recent education and trainings',
     work: 'Work',
     membership: 'Memberships',
     conferences: 'Conferences, Hackathons and Seminars',
@@ -68,6 +70,8 @@ export const localize: ILocalize = {
     contentWriting: 'Content Writing',
     smm: 'SMM skills',
     managementSkills: 'Management',
+    organizationalSkills: 'Organizational skills',
+    eventManagement: 'Event management',
     publicSpeech: 'Public speech',
     networking: 'Networking',
     leadershipSkills: 'Leadership',
@@ -80,18 +84,24 @@ export const localize: ILocalize = {
     erasmusMobility: 'Erasmus+ Mobility',
     fakeNews: 'Fake News',
     criticalThinking: 'Critical Thinking',
+    reactJs: 'ReactJS',
+    redux: 'Redux',
+    reduxToolkit: 'Redux Toolkit',
+    webpack: 'Webpack',
 
     // Names
     inSource: 'Insource.am',
     technamin: 'Technamin',
-    imperialCapital: 'Imperial Capital Group',
+    imperialCapital: 'Trading platform',
     medControl: 'Med Control',
+    eCommerceApp: 'E-commerce application',
     yerevan: 'Yerevan, Armenia',
     chisinau: 'Chisinau, Moldova',
     bakuriani: 'Bakuriani, Georgia',
     aveiro: 'Aveiro, Portugal',
     gyumri: 'Gyumri, Armenia',
     bilbao: 'Bilbao, Spain',
+    fulda: 'Fulda, Germany',
 
     // Info introductions
     websiteDevelopment: 'This website is developed by Yeva Galstyan.',
@@ -120,17 +130,17 @@ export const localize: ILocalize = {
     providingSupportTechnamin: 'Managing the upkeep of an online gaming platform and designing an administrative dashboard for gaming staff members.',
     projectContributions: 'Below is a compilation of my personal projects and collaborative contributions over the past few years:',
     tradingService: 'Imperial Capital Group is a platform offering services for conducting cryptocurrency trading in a safe and protected environment.' +
-        ' The platform offers a user-friendly interface, making it easy for both beginners and experienced traders to navigate and execute trades effectively.' +
-        ' It provides a seamless trading experience with real-time market data and intuitive trading tools.',
+        ' It offers a user-friendly interface, making it easy for both beginners and experienced traders to navigate and execute trades effectively' +
+        ' and provides a seamless trading experience with real-time market data and intuitive trading tools.',
     medControlService: 'Introducing Med Control, a comprehensive platform designed exclusively for private medical institutions to efficiently manage and securely maintain their journal records. ' +
         'With this platform, the time spent on journal entries can now be reduced to a mere 10 minutes per day, saving valuable resources and allowing medical professionals to focus more on patient care. ' +
         'This innovative solution incorporates a user-friendly interface and utilizes status indicators to easily identify which journals still require completion. ' +
         'Med Control ensures the utmost privacy and security of sensitive medical data, providing peace of mind to healthcare providers and patients alike.',
-    tradingServiceShort: 'Administrative panel for cryptocurrency trading',
-    medControlServiceShort: 'Administrative panel for medical institutions',
+    tradingServiceShort: 'Imperial Capital Group is a platform offering services for conducting cryptocurrency trading in a safe and protected environment.',
+    medControlServiceShort: 'Introducing Med Control, a comprehensive platform designed exclusively for private medical institutions to efficiently manage and securely maintain their journal records.',
     openProject: 'Open Project',
-    recentProjectList: 'Listed below are details about the most recent projects I have been actively involved in:',
-
+    recentProjectList: 'Listed below are details about the most recent projects I have been actively involved in. Kindly proceed to the',
+    eCommerceShort: 'An e-commerce app was built using React tools like TypeScript, Redux, and Redux Toolkit. With this app, one can quickly sign in or create an account, update a profile, and browse through available products. Find what is needed with search and filter options, add items to your cart, and checkout. This project is created solely for education purposes as a final project for the React level-up course I attended',
 
     // About
     IAmYevaGalstyan: 'Hi, I’m Yeva.',
@@ -140,6 +150,7 @@ export const localize: ILocalize = {
     alsoWorking: ' and I am also currently freelancing on multiple high-volume ',
     proceedToWorkPage: 'To gain further insight into my work experience and independent projects, kindly proceed to the ',
     toGainInformation: '  page for detailed information.',
+    proceedToEducationPage: 'To gain further insight into my educational and trainings background, kindly proceed to the ',
 
     // Membership
     volunteerExperience: 'Displayed below are comprehensive insights into my volunteering experience, showcasing the various aspects of my involvement and contributions:',
@@ -157,19 +168,28 @@ export const localize: ILocalize = {
         'devise digital solutions aimed at addressing community needs. These solutions empower citizens to\n' +
         'effectively oversee their governments and contribute to enhancing public services within their respective\n' +
         'nations.',
+    notionCampusLeader: 'Notion Campus Leader',
+    notion: 'Notion',
+    notionDescription: 'Responsibilities include organizing and facilitating various campus events within Hochschule Fulda, such as workshops, club\n' +
+        'collaborations, study sessions, and hackathons to promote Notion and its functionalities.',
 
     // Education
     educationDescription: 'Below is the overview of my academic history, including my educational background and ',
     erasmusAveiro: 'Erasmus+ program in BS in Maths',
     aveiroUniversity: 'University of Aveiro',
     yerevanUniversity: 'Yerevan State University',
-    ysuFaculty: 'Bachelor’s degree in CS',
+    ysuFaculty: 'Bachelors in Computer Science',
     highSchool: 'High School',
     polytechUniversity: 'National Polytechnic University of Armenia',
+    fuldaMastersUniversity: 'Masters in Computer Science',
+    fuldaUniversity: 'Hochschule Fulda',
 
     // Trainings
     trainingDescription: 'Below is compilation of the additional training programs I have undergone beyond the regular curriculum:',
     attendanceCertificate: 'Certificate of Attendance',
+    diploma: 'Diploma',
+    enrollmentCertificate: 'Certificate of Enrollment',
+    referenceLetter: 'Reference Letter',
     applicationDevelopment: 'Front-end development',
     seriousWebDevelopment: 'Serious Web Development',
     selfManagementProgram: 'Self-governance 2020',
@@ -179,6 +199,8 @@ export const localize: ILocalize = {
     yic: 'Youth Initiative Centre',
     fightFakeNews: 'Fight fake news in social media',
     aisd: 'Association of Social Integration and Development',
+    reactLevelUp: 'React Level Up course',
+    sunnySchool: 'Sunny School',
 
     // Months
     jan: 'January',

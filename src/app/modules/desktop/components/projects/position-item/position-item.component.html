@@ -2,7 +2,7 @@
     <div class="info_header_block">
         <div class="info_header">
             <h4>{{position.positionName}}</h4>
-            <span>{{position.period}}</span>
+            <span *ngIf="position.period">{{position.period}}</span>
         </div>
         <div class="info_subheader">
             <a target="_blank" [href]="position.url">
