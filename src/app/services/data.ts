@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {LocalizeService} from '../localizer/localize.service';
-import {feedback, membership, position, project} from '../interfaces/data';
+import {feedback, language, languageLevels, membership, position, project} from '../interfaces/data';
 
 @Injectable({
     providedIn: 'root'
@@ -359,6 +359,35 @@ export class DataService {
             innerPage: true
         },
     ]
+
+    readonly languages: language[] = [
+        {
+            name: this.localize.localize.armenian,
+            level: languageLevels.c2
+        },
+        {
+            name: this.localize.localize.english,
+            level: languageLevels.c1
+        },
+        {
+            name: this.localize.localize.german,
+            level: languageLevels.a1
+        },
+        {
+            name: this.localize.localize.russian,
+            level: languageLevels.b2
+        }
+    ];
+
+    readonly languageLevels: string[] = [
+        this.localize.localize.a1,
+        this.localize.localize.a2,
+        this.localize.localize.b1,
+        this.localize.localize.b2,
+        this.localize.localize.c1,
+        this.localize.localize.c2
+    ]
+
 
     period(startYear: number, startMonth: string, endYear?: number, endMonth?: string, startDay?: number, endDay?: number) {
         if (!endYear && !endMonth) {

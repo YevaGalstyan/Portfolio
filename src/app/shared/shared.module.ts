@@ -11,6 +11,7 @@ import {ScrollToTopComponent} from './scroll-to-top/scroll-to-top.component';
 import {PagingComponent} from './paging/paging.component';
 import {FeedbacksComponent} from './feedbacks/feedbacks.component';
 import { UnderConstructionComponent } from './under-contruction/under-construction.component';
+import { LanguagesComponent } from './languages/languages.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { UnderConstructionComponent } from './under-contruction/under-constructi
         PagingComponent,
         FeedbacksComponent,
         UnderConstructionComponent,
+        LanguagesComponent,
     ],
     exports: [
         HeaderComponent,
@@ -30,7 +32,8 @@ import { UnderConstructionComponent } from './under-contruction/under-constructi
         ScrollToTopComponent,
         PagingComponent,
         FeedbacksComponent,
-        UnderConstructionComponent
+        UnderConstructionComponent,
+        LanguagesComponent
     ],
     imports: [
         CommonModule,

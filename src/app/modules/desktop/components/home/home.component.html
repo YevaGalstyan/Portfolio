@@ -56,13 +56,11 @@
 
         <app-membership-item
                 *ngFor="let education of dataService.education | slice: 0: 1"
-                [membership]="education">
-        </app-membership-item>
+                [membership]="education"/>
 
         <app-membership-item
                 *ngFor="let training of dataService.trainings | slice: 0: 1"
-                [membership]="training">
-        </app-membership-item>
+                [membership]="training"/>
     </div>
 
     <!--Professional experience -->
@@ -78,8 +76,7 @@
 
         <app-position-item
                 *ngFor="let position of dataService.positions | slice: 0: 1"
-                [position]="position">
-        </app-position-item>
+                [position]="position"/>
     </div>
 
     <!--Recent project-->
@@ -96,9 +93,19 @@
             <app-card
                     *ngFor="let item of dataService.projectsDetails | slice:0:2; let i=index"
                     [card]="item"
-                    (cardClicked)="generalService.navigate('work/' + (i+1))">
-            </app-card>
+                    (cardClicked)="generalService.navigate('work/' + (i+1))"/>
         </div>
+    </div>
+
+    <!--Languages-->
+    <div style="margin-top: 20px" class="body_block">
+        <div class="body_header">
+            <h4 style="text-transform: capitalize">{{localize.localize.languageProficiency}}</h4>
+        </div>
+
+        <app-languages>
+
+        </app-languages>
     </div>
 
     <!--Reviews-->
