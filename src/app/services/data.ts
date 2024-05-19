@@ -7,11 +7,29 @@ import {feedback, language, languageLevels, membership, position, project} from 
 })
 
 export class DataService {
-
+    
     constructor(private localize: LocalizeService) {
     }
-
+    
     readonly trainings: membership[] = [
+        {
+            imgUrl: 'trainings/dataArt.png',
+            url: 'https://www.dataart.team/events/dataart-winter-it-camp-2024',
+            positionName: this.localize.localize.winterCamp,
+            period: this.period(2024, this.localize.localize.feb, 2024, this.localize.localize.feb, 12, 18),
+            name: this.localize.localize.dataArt,
+            location: this.localize.localize.yerevan,
+            skills: [
+                this.localize.localize.interculturalCommunication,
+                this.localize.localize.managementSkills
+            ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'dataArtTraining.pdf'
+                }
+            ]
+        },
         {
             imgUrl: 'trainings/react.png',
             url: 'https://sunnyschool.am/level-up/',
@@ -128,8 +146,8 @@ export class DataService {
             ]
         }
     ]
-
-
+    
+    
     readonly education: membership[] = [
         // Fulda University
         {
@@ -146,7 +164,7 @@ export class DataService {
                 }
             ]
         },
-
+        
         // Aveiro University
         {
             imgUrl: 'education/aveiroUni.png',
@@ -162,7 +180,7 @@ export class DataService {
                 }
             ]
         },
-
+        
         // Yerevan State University
         {
             imgUrl: 'education/ysuUni.png',
@@ -178,7 +196,7 @@ export class DataService {
                 }
             ]
         },
-
+        
         // Polytechnic High School
         {
             imgUrl: 'education/polytechUni.png',
@@ -189,7 +207,7 @@ export class DataService {
             location: this.localize.localize.yerevan,
         }
     ]
-
+    
     readonly memberships: membership[] = [
         {
             imgUrl: 'memberships/notion.png',
@@ -227,7 +245,7 @@ export class DataService {
                 }
             ]
         },
-
+        
         {
             imgUrl: 'memberships/agbu.png',
             url: 'https://agbu.org/scouts',
@@ -250,7 +268,7 @@ export class DataService {
             ]
         }
     ]
-
+    
     readonly conferences: membership[] = [
         {
             imgUrl: 'conferences/EAP-logo.png',
@@ -279,7 +297,7 @@ export class DataService {
             attachedFiles: []
         },
     ]
-
+    
     readonly feedbacks: feedback[] = [
         {
             imgUrl: 'andrey.jpeg',
@@ -288,7 +306,7 @@ export class DataService {
             review: this.localize.localize.reviewAndrey
         }
     ]
-
+    
     readonly positions: position[] = [
         {
             positionName: this.localize.localize.mid,
@@ -303,7 +321,7 @@ export class DataService {
                 this.localize.localize.figma
             ]
         },
-
+        
         {
             positionName: this.localize.localize.junior,
             period: this.period(2020, this.localize.localize.nov, 2021, this.localize.localize.oct),
@@ -318,19 +336,19 @@ export class DataService {
             ]
         }
     ]
-
+    
     readonly projectsDetails: project[] = [
         {
             // Details - inner page
             date: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.may),
             github: 'https://github.com/YevaGalstyan/E-commerce-react',
-
+            
             // Outer - card information
             cardHeader: this.localize.localize.eCommerceApp,
             cardInfo: this.localize.localize.eCommerceShort,
             innerPage: false
         },
-
+        
         {
             // Details - inner page
             name: this.localize.localize.medControl + ' / МЕД УПРАВЛЕНИЕ',
@@ -338,13 +356,13 @@ export class DataService {
             description: this.localize.localize.medControlService,
             imgUrls: ['med.png', 'med3.png', 'med1.png', 'med2.png'],
             link: 'https://app.med-upravlenie.ru/',
-
+            
             // Outer - card information
             cardHeader: this.localize.localize.medControl,
             cardInfo: this.localize.localize.medControlServiceShort,
             innerPage: true
         },
-
+        
         {
             // Details - inner page
             name: this.localize.localize.imperialCapital,
@@ -352,14 +370,14 @@ export class DataService {
             description: this.localize.localize.tradingService,
             imgUrls: ['trade.png'],
             github: 'https://github.com/YevaGalstyan/trade-front',
-
+            
             // Outer - card information
             cardHeader: this.localize.localize.imperialCapital,
             cardInfo: this.localize.localize.tradingServiceShort,
             innerPage: true
         },
     ]
-
+    
     readonly languages: language[] = [
         {
             name: this.localize.localize.armenian,
@@ -378,7 +396,7 @@ export class DataService {
             level: languageLevels.b2
         }
     ];
-
+    
     readonly languageLevels: string[] = [
         this.localize.localize.a1,
         this.localize.localize.a2,
@@ -387,8 +405,8 @@ export class DataService {
         this.localize.localize.c1,
         this.localize.localize.c2
     ]
-
-
+    
+    
     period(startYear: number, startMonth: string, endYear?: number, endMonth?: string, startDay?: number, endDay?: number) {
         if (!endYear && !endMonth) {
             return startMonth + ' ' + startYear + ' - ' + this.localize.localize.present
@@ -396,7 +414,7 @@ export class DataService {
         if (startDay && endDay) {
             return startDay + ' ' + startMonth + ' ' + startYear + ' - ' + endDay + ' ' + endMonth + ' ' + endYear
         }
-
+        
         return startMonth + ' ' + startYear + ' - ' + endMonth + ' ' + endYear;
     }
 }

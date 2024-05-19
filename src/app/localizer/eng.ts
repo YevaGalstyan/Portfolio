@@ -89,7 +89,8 @@ export const localize: ILocalize = {
     redux: 'Redux',
     reduxToolkit: 'Redux Toolkit',
     webpack: 'Webpack',
-
+    interculturalCommunication: 'Intercultural communication',
+    
     // Names
     inSource: 'Insource.am',
     technamin: 'Technamin',
@@ -202,6 +203,8 @@ export const localize: ILocalize = {
     aisd: 'Association of Social Integration and Development',
     reactLevelUp: 'React Level Up course',
     sunnySchool: 'Sunny School',
+    winterCamp: 'Winter Campus',
+    dataArt: 'Data Art',
 
     // Months
     jan: 'January',
