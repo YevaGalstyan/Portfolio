@@ -85,6 +85,7 @@ export interface ILocalize {
     redux: string
     reduxToolkit: string
     webpack: string
+    interculturalCommunication: string
 
     // Names
     inSource: string,
@@ -189,6 +190,8 @@ export interface ILocalize {
     aisd: string
     reactLevelUp: string
     sunnySchool: string
+    winterCamp: string
+    dataArt: string
 
     // Months
     jan: string
