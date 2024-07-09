@@ -90,6 +90,8 @@ export const localize: ILocalize = {
     reduxToolkit: 'Redux Toolkit',
     webpack: 'Webpack',
     interculturalCommunication: 'Intercultural communication',
+    aiIntegration: 'AI integration',
+    ethicalConsideration: 'Ethical Consideration',
     
     // Names
     inSource: 'Insource.am',
@@ -104,6 +106,7 @@ export const localize: ILocalize = {
     gyumri: 'Gyumri, Armenia',
     bilbao: 'Bilbao, Spain',
     fulda: 'Fulda, Germany',
+    hasselt: 'Hasselt, Belgium',
 
     // Info introductions
     websiteDevelopment: 'This website is developed by Yeva Galstyan.',
@@ -142,7 +145,7 @@ export const localize: ILocalize = {
     medControlServiceShort: 'Introducing Med Control, a comprehensive platform designed exclusively for private medical institutions to efficiently manage and securely maintain their journal records.',
     openProject: 'Open Project',
     recentProjectList: 'Listed below are details about the most recent projects I have been actively involved in. Kindly proceed to the',
-    eCommerceShort: 'An e-commerce app was built using React tools like TypeScript, Redux, and Redux Toolkit. With this app, one can quickly sign in or create an account, update a profile, and browse through available products. Find what is needed with search and filter options, add items to your cart, and checkout. This project is created solely for education purposes as a final project for the React level-up course I attended',
+    eCommerceShort: 'An e-commerce app was built using React tools like TypeScript, Redux, and Redux Toolkit. This project is created solely for education purposes as a final project for the React level-up course I attended.',
 
     // About
     IAmYevaGalstyan: 'Hi, I’m Yeva.',
@@ -205,7 +208,10 @@ export const localize: ILocalize = {
     sunnySchool: 'Sunny School',
     winterCamp: 'Winter Campus',
     dataArt: 'Data Art',
-
+    eudres: 'E³UDRES²',
+    eudresBootcamp: 'E³UDRES² Bootcamp',
+    transcript: 'Transcript',
+    
     // Months
     jan: 'January',
     feb: 'February',

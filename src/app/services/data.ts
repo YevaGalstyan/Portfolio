@@ -13,6 +13,29 @@ export class DataService {
     
     readonly trainings: membership[] = [
         {
+            imgUrl: 'trainings/eudres.png',
+            url: 'https://yic.am/',
+            positionName: this.localize.localize.eudresBootcamp,
+            period: this.period(2024, this.localize.localize.jul, 2024, this.localize.localize.jul, 1, 5),
+            name: this.localize.localize.eudres,
+            location: this.localize.localize.hasselt,
+            skills: [
+                this.localize.localize.aiIntegration,
+                this.localize.localize.ethicalConsideration,
+                this.localize.localize.interculturalCommunication,
+            ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'bootcamp_eudres.pdf'
+                },
+                {
+                    fileName: this.localize.localize.transcript,
+                    fileLink: 'hasselt_transcript.pdf'
+                }
+            ]
+        },
+        {
             imgUrl: 'trainings/dataArt.png',
             url: 'https://www.dataart.team/events/dataart-winter-it-camp-2024',
             positionName: this.localize.localize.winterCamp,
@@ -27,7 +50,7 @@ export class DataService {
                 {
                     fileName: this.localize.localize.attendanceCertificate,
                     fileLink: 'dataArtTraining.pdf'
-                }
+                },
             ]
         },
         {

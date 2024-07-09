@@ -86,6 +86,8 @@ export interface ILocalize {
     reduxToolkit: string
     webpack: string
     interculturalCommunication: string
+    aiIntegration: string
+    ethicalConsideration: string
 
     // Names
     inSource: string,
@@ -100,6 +102,7 @@ export interface ILocalize {
     gyumri: string
     bilbao: string
     fulda: string
+    hasselt: string
 
     // Info introductions
     websiteDevelopment: string
@@ -192,6 +195,9 @@ export interface ILocalize {
     sunnySchool: string
     winterCamp: string
     dataArt: string
+    eudres: string
+    eudresBootcamp: string
+    transcript: string
 
     // Months
     jan: string
