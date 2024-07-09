@@ -28,6 +28,10 @@ export class DataService {
                 {
                     fileName: this.localize.localize.attendanceCertificate,
                     fileLink: 'bootcamp_eudres.pdf'
+                },
+                {
+                    fileName: this.localize.localize.transcript,
+                    fileLink: 'hasselt_transcript.pdf'
                 }
             ]
         },
@@ -47,10 +51,6 @@ export class DataService {
                     fileName: this.localize.localize.attendanceCertificate,
                     fileLink: 'dataArtTraining.pdf'
                 },
-                {
-                    fileName: this.localize.localize.transcript,
-                    fileLink: 'hasselt_transcript.pdf'
-                }
             ]
         },
         {
