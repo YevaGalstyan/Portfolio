@@ -73,6 +73,12 @@ export class DataService {
                     icon: 'icons/github-mark.svg'
                 },
             ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'react_level_up_course.pdf'
+                },
+            ]
         },
         {
             imgUrl: 'trainings/erasmus.jpeg',
