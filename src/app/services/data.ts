@@ -13,6 +13,19 @@ export class DataService {
     
     readonly trainings: membership[] = [
         {
+            imgUrl: 'trainings/efa.png',
+            url: 'https://www.alpbach.org/de',
+            positionName: this.localize.localize.efa + ' 2024',
+            period: this.period(2024, this.localize.localize.aug, 2024, this.localize.localize.aug, 18, 30),
+            name: this.localize.localize.efa,
+            location: this.localize.localize.alpbach,
+            skills: [
+                this.localize.localize.strategicThinking,
+                this.localize.localize.policyAnalysis,
+                this.localize.localize.networking,
+            ],
+        },
+        {
             imgUrl: 'trainings/eudres.png',
             url: 'https://yic.am/',
             positionName: this.localize.localize.eudresBootcamp,

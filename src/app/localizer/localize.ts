@@ -88,6 +88,8 @@ export interface ILocalize {
     interculturalCommunication: string
     aiIntegration: string
     ethicalConsideration: string
+    strategicThinking: string
+    policyAnalysis: string
 
     // Names
     inSource: string,
@@ -103,6 +105,7 @@ export interface ILocalize {
     bilbao: string
     fulda: string
     hasselt: string
+    alpbach: string
 
     // Info introductions
     websiteDevelopment: string
@@ -198,6 +201,7 @@ export interface ILocalize {
     eudres: string
     eudresBootcamp: string
     transcript: string
+    efa: string
 
     // Months
     jan: string

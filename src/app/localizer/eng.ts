@@ -92,6 +92,8 @@ export const localize: ILocalize = {
     interculturalCommunication: 'Intercultural communication',
     aiIntegration: 'AI integration',
     ethicalConsideration: 'Ethical Consideration',
+    strategicThinking: 'Strategic thinking',
+    policyAnalysis: 'Policy Analysis',
     
     // Names
     inSource: 'Insource.am',
@@ -107,6 +109,7 @@ export const localize: ILocalize = {
     bilbao: 'Bilbao, Spain',
     fulda: 'Fulda, Germany',
     hasselt: 'Hasselt, Belgium',
+    alpbach: 'Alpbach, Austria',
 
     // Info introductions
     websiteDevelopment: 'This website is developed by Yeva Galstyan.',
@@ -211,6 +214,7 @@ export const localize: ILocalize = {
     eudres: 'E³UDRES²',
     eudresBootcamp: 'E³UDRES² Bootcamp',
     transcript: 'Transcript',
+    efa: 'European Forum Alpbach',
     
     // Months
     jan: 'January',
