@@ -144,9 +144,6 @@ export interface ILocalize {
     // About
     IAmYevaGalstyan: string
     myOccupation: string
-    workplace: string
-    myPosition: string
-    alsoWorking: string
     proceedToWorkPage: string
     toGainInformation: string
     proceedToEducationPage: string

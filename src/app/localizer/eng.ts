@@ -152,10 +152,10 @@ export const localize: ILocalize = {
 
     // About
     IAmYevaGalstyan: 'Hi, I’m Yeva.',
-    myOccupation: 'I am a bachelor\'s degree holder in Computer Science and  a front-end engineer.',
-    workplace: ' I work at',
-    myPosition: ' as a front-end developer,',
-    alsoWorking: ' and I am also currently freelancing on multiple high-volume ',
+    myOccupation: 'I am a master\'s student in Global Software Development at Hochschule Fulda, Germany, ' +
+        'with a strong foundation in software engineering and a passion for creating Front-End solutions ' +
+        'for high-volume platforms. Feel free to explore my educational and professional background' +
+        ' through my portfolio.',
     proceedToWorkPage: 'To gain further insight into my work experience and independent projects, kindly proceed to the ',
     toGainInformation: '  page for detailed information.',
     proceedToEducationPage: 'To gain further insight into my educational and trainings background, kindly proceed to the ',
