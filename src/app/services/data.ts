@@ -13,6 +13,19 @@ export class DataService {
     
     readonly trainings: membership[] = [
         {
+            imgUrl: 'trainings/efa.png',
+            url: 'https://www.alpbach.org/de',
+            positionName: this.localize.localize.efa + ' 2024',
+            period: this.period(2024, this.localize.localize.aug, 2024, this.localize.localize.aug, 18, 30),
+            name: this.localize.localize.efa,
+            location: this.localize.localize.alpbach,
+            skills: [
+                this.localize.localize.strategicThinking,
+                this.localize.localize.policyAnalysis,
+                this.localize.localize.networking,
+            ],
+        },
+        {
             imgUrl: 'trainings/eudres.png',
             url: 'https://yic.am/',
             positionName: this.localize.localize.eudresBootcamp,
@@ -29,10 +42,10 @@ export class DataService {
                     fileName: this.localize.localize.attendanceCertificate,
                     fileLink: 'bootcamp_eudres.pdf'
                 },
-                {
-                    fileName: this.localize.localize.transcript,
-                    fileLink: 'hasselt_transcript.pdf'
-                }
+                // {
+                //     fileName: this.localize.localize.transcript,
+                //     fileLink: 'hasselt_transcript.pdf'
+                // }
             ]
         },
         {
@@ -186,12 +199,12 @@ export class DataService {
             period: this.period(2024, this.localize.localize.apr),
             name: this.localize.localize.fuldaUniversity,
             location: this.localize.localize.fulda,
-            attachedFiles: [
-                {
-                    fileName: this.localize.localize.enrollmentCertificate,
-                    fileLink: 'enrollment_Fulda.pdf'
-                }
-            ]
+            // attachedFiles: [
+            //     {
+            //         fileName: this.localize.localize.enrollmentCertificate,
+            //         fileLink: 'enrollment_Fulda.pdf'
+            //     }
+            // ]
         },
         
         // Aveiro University
@@ -202,12 +215,12 @@ export class DataService {
             period: this.period(2022, this.localize.localize.sep, 2023, this.localize.localize.jan),
             name: this.localize.localize.aveiroUniversity,
             location: this.localize.localize.aveiro,
-            attachedFiles: [
-                {
-                    fileName: this.localize.localize.attendanceCertificate,
-                    fileLink: 'certificate_of_attendance_Aveiro.pdf'
-                }
-            ]
+            // attachedFiles: [
+            //     {
+            //         fileName: this.localize.localize.attendanceCertificate,
+            //         fileLink: 'certificate_of_attendance_Aveiro.pdf'
+            //     }
+            // ]
         },
         
         // Yerevan State University
@@ -218,12 +231,12 @@ export class DataService {
             period: this.period(2019, this.localize.localize.sep, 2023, this.localize.localize.may),
             name: this.localize.localize.yerevanUniversity,
             location: this.localize.localize.yerevan,
-            attachedFiles: [
-                {
-                    fileName: this.localize.localize.diploma,
-                    fileLink: 'university_diploma.pdf'
-                }
-            ]
+            // attachedFiles: [
+            //     {
+            //         fileName: this.localize.localize.diploma,
+            //         fileLink: 'university_diploma.pdf'
+            //     }
+            // ]
         },
         
         // Polytechnic High School
