@@ -13,6 +13,19 @@
     </app-position-item>
 
     <div class="body_block">
+        <!--Mini jobs and internships-->
+        <div class="body_header">
+            <h4 style="text-transform: capitalize">{{localize.localize.miniJobInternship}}</h4>
+            <span>{{localize.localize.miniJobDescription}}</span>
+        </div>
+
+        <app-membership-item
+                *ngFor="let internship of dataService.internships"
+                [membership]="internship">
+        </app-membership-item>
+    </div>
+
+    <div class="body_block">
         <!--Independent projects-->
         <div class="body_header">
             <h4 style="text-transform: capitalize">{{localize.localize.independentProject}}</h4>

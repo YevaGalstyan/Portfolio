@@ -11,6 +11,18 @@ export class DataService {
     constructor(private localize: LocalizeService) {
     }
     
+    readonly internships: membership[] = [
+        {
+            imgUrl: 'internships/delfi.png',
+            url: 'https://delfi-tagung.de/delfi-2024',
+            positionName: this.localize.localize.delfiDays + ' 2024',
+            period: this.period(2024, this.localize.localize.sep, 2024, this.localize.localize.sep, 6, 10),
+            name: this.localize.localize.fuldaUniversity,
+            location: this.localize.localize.fulda,
+            description: this.localize.localize.delfiDescription,
+        },
+    ]
+    
     readonly trainings: membership[] = [
         {
             imgUrl: 'trainings/efa.png',
