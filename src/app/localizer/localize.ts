@@ -25,7 +25,10 @@ export interface ILocalize {
     recentProject: string
     nextProject: string
     trainings: string
+    miniJobInternship: string
     languageProficiency: string
+    delfiDays: string
+    delfiDescription: string
 
     // Feedbacks
     feedbacks: string
@@ -140,6 +143,7 @@ export interface ILocalize {
     medControlServiceShort: string
     openProject: string
     eCommerceShort: string
+    miniJobDescription: string
 
     // About
     IAmYevaGalstyan: string

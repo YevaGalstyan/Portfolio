@@ -11,6 +11,8 @@ export const localize: ILocalize = {
     accessDesktop: 'Try to access webpage with a desktop device',
     links: 'Useful links',
     languageProficiency: 'Language proficiency',
+    delfiDays: 'DELFI Tagung',
+    delfiDescription: 'Part-time job assisting with organizing posters and handling technical tasks during the DELFI Conference.',
 
     // Menu
     about: 'About',
@@ -29,6 +31,7 @@ export const localize: ILocalize = {
     recentProject: 'Recent Projects',
     nextProject: 'Next Project',
     trainings: 'trainings',
+    miniJobInternship: 'Short-term jobs and Internships',
 
     // Feedbacks
     feedbacks: 'Feedbacks',
@@ -149,7 +152,8 @@ export const localize: ILocalize = {
     openProject: 'Open Project',
     recentProjectList: 'Listed below are details about the most recent projects I have been actively involved in. Kindly proceed to the',
     eCommerceShort: 'An e-commerce app was built using React tools like TypeScript, Redux, and Redux Toolkit. This project is created solely for education purposes as a final project for the React level-up course I attended.',
-
+    miniJobDescription: 'Here is a summary of the internships and short-term jobs I have completed.',
+    
     // About
     IAmYevaGalstyan: 'Hi, I’m Yeva.',
     myOccupation: 'I am a master\'s student in Global Software Development at Hochschule Fulda, Germany, ' +
