@@ -36,6 +36,12 @@ export class DataService {
                 this.localize.localize.policyAnalysis,
                 this.localize.localize.networking,
             ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'European_Forum_Alpbach.pdf'
+                },
+            ]
         },
         {
             imgUrl: 'trainings/eudres.png',
