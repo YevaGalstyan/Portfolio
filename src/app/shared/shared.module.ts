@@ -5,7 +5,6 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 // Components
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
-import {MatTooltipModule} from '@angular/material/tooltip';
 import {CardComponent} from './card/card.component';
 import {ScrollToTopComponent} from './scroll-to-top/scroll-to-top.component';
 import {FeedbacksComponent} from './feedbacks/feedbacks.component';
@@ -35,7 +34,6 @@ import { LanguagesComponent } from './languages/languages.component';
     imports: [
         CommonModule,
         RouterLink,
-        MatTooltipModule,
         RouterLinkActive
     ]
 })

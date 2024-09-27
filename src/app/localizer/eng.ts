@@ -153,6 +153,24 @@ export const localize: ILocalize = {
     recentProjectList: 'Listed below are details about the most recent projects I have been actively involved in. Kindly proceed to the',
     eCommerceShort: 'An e-commerce app was built using React tools like TypeScript, Redux, and Redux Toolkit. This project is created solely for education purposes as a final project for the React level-up course I attended.',
     miniJobDescription: 'Here is a summary of the internships and short-term jobs I have completed.',
+    speechDetection: 'Speech Detection',
+    speechDetectionDescription: 'Azure Cognitive Services for speech recognition and speech synthesis package integration with Angular v17.',
+    speechDetectionDescription1: 'This repository contains a small Angular application that demonstrates the integration of Azure Cognitive Services for speech recognition and speech synthesis. The application uses Azure\'s voice detection AI to interact with users via text-to-speech and speech-to-text functionalities. This project is intended for testing and demonstration purposes.',
+    overview: 'Overview',
+    overviewTitleMed1: 'General View: Full Calendar Integration',
+    overviewDescriptionMed1: 'For this project, the FullCalendar package was used to provide a rich, interactive calendar experience. When users click on specific days, ' +
+        'they can view tasks scheduled for that day, with each task marked in different colors based on its type or priority. ' +
+        'This integration enhances task tracking and visualization, making it easy to manage daily workflows.',
+    overviewTitleMed2: 'Medical Documentation: Dynamic Table View',
+    overviewDescriptionMed2: 'On the medical documentation page, users initially see a straightforward table with several data columns. However, once they click on a specific entry,' +
+        ' things become more complex. Depending on the type of journal selected (as indicated in the second column), a different table with unique properties,' +
+        ' buttons, and editable cells will appear. For instance, here is an example of how the general cleaning journal is structured, along with its specific properties and functionality.',
+    overviewTitleMed3: 'Inner Journals: Employee day offs',
+    overviewDescriptionMed3: 'Here is the internal journal for "Journal of Pre-Sterilization Treatment Control", used to set day offs for specific employees. The system accounts for two types of days off - monthly days off, which are recurring every month, and specific days off within a particular month.',
+    overviewCreateRecording: 'Create Recording: SpeechRecognition',
+    overviewCreatePrompt: 'Create Prompt: SpeechSynthesizer',
+    overviewCreatePromptDescription: 'This project utilizes two key components from Azure Cognitive Services. The first is speech synthesis, which generates prompts like the user\'s name, occupation, and age. These prompts are used to guide the user in hearing and pronouncing specific parameters accurately.',
+    overviewCreateRecordingDescription: 'The second service used is speech recognition, where the user responds to each prompt by pronouncing their name, occupation, and age. This allows them to successfully fill in the required fields based on their spoken responses.',
     
     // About
     IAmYevaGalstyan: 'Hi, I’m Yeva.',

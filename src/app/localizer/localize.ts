@@ -144,7 +144,21 @@ export interface ILocalize {
     openProject: string
     eCommerceShort: string
     miniJobDescription: string
-
+    speechDetection: string
+    speechDetectionDescription: string
+    speechDetectionDescription1: string
+    overview: string
+    overviewTitleMed1: string
+    overviewDescriptionMed1: string
+    overviewTitleMed2: string
+    overviewDescriptionMed2: string
+    overviewTitleMed3: string
+    overviewDescriptionMed3: string
+    overviewCreateRecording: string
+    overviewCreatePrompt: string
+    overviewCreatePromptDescription: string
+    overviewCreateRecordingDescription: string
+    
     // About
     IAmYevaGalstyan: string
     myOccupation: string
