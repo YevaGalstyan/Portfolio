@@ -400,23 +400,56 @@ export class DataService {
     readonly projectsDetails: project[] = [
         {
             // Details - inner page
-            date: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.may),
-            github: 'https://github.com/YevaGalstyan/E-commerce-react',
-            
+            name: this.localize.localize.speechDetection,
+            description: this.localize.localize.speechDetectionDescription1,
+            date: this.period(2024, this.localize.localize.jul, 2024, this.localize.localize.jul, 1, 5),
+            github: 'https://github.com/YevaGalstyan/speech-detection',
+            overview: [
+                {
+                    title: this.localize.localize.overviewCreatePrompt,
+                    description: this.localize.localize.overviewCreatePromptDescription,
+                    codeSnippets: ['speech/speech_code1.png'],
+                    imges: ['speech/speech_detector.png'],
+                    link: 'https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech',
+                },
+                {
+                    title: this.localize.localize.overviewCreateRecording,
+                    description: this.localize.localize.overviewCreateRecordingDescription,
+                    codeSnippets: ['speech/speech_code2.png', 'speech/speech_code3.png'],
+                    link: 'https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text'
+                },
+            ],
             // Outer - card information
-            cardHeader: this.localize.localize.eCommerceApp,
-            cardInfo: this.localize.localize.eCommerceShort,
-            innerPage: false
+            cardHeader: this.localize.localize.speechDetection,
+            cardInfo: this.localize.localize.speechDetectionDescription,
+            innerPage: true
         },
         
         {
-            // Details - inner page
-            name: this.localize.localize.medControl + ' / МЕД УПРАВЛЕНИЕ',
+            name: this.localize.localize.medControl,
             date: this.period(2022, this.localize.localize.nov, 2024, this.localize.localize.jan),
             description: this.localize.localize.medControlService,
-            imgUrls: ['med.png', 'med3.png', 'med1.png', 'med2.png'],
-            link: 'https://app.med-upravlenie.ru/',
-            
+            overview: [
+                {
+                    title: this.localize.localize.overviewTitleMed2,
+                    description: this.localize.localize.overviewDescriptionMed2,
+                    codeSnippets: ['med/med1_1Code.png', 'med/med1_2Code.png', 'med/med1_3Code.png'],
+                    imges: ['med/med1.png', 'med/med1_1.jpg']
+                },
+                {
+                    title: this.localize.localize.overviewTitleMed3,
+                    description: this.localize.localize.overviewDescriptionMed3,
+                    codeSnippets: ['med/med1_4Code.png', 'med/med1_5Code.png'],
+                    imges: ['med/med1_4.png']
+                },
+                {
+                    title: this.localize.localize.overviewTitleMed1,
+                    description: this.localize.localize.overviewDescriptionMed1,
+                    link: 'https://www.npmjs.com/package/@fullcalendar/angular',
+                    codeSnippets: ['med/med2Code.png', 'med/med1Code.png'],
+                    imges: ['med/med.png']
+                },
+            ],
             // Outer - card information
             cardHeader: this.localize.localize.medControl,
             cardInfo: this.localize.localize.medControlServiceShort,
@@ -428,7 +461,9 @@ export class DataService {
             name: this.localize.localize.imperialCapital,
             date: this.period(2021, this.localize.localize.may, 2021, this.localize.localize.sep),
             description: this.localize.localize.tradingService,
-            imgUrls: ['trade.png'],
+            overview: [{
+                imges: ['trade.png'],
+            }],
             github: 'https://github.com/YevaGalstyan/trade-front',
             
             // Outer - card information

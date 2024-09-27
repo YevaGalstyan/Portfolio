@@ -4,11 +4,9 @@
             <h6>{{card.cardHeader}}</h6>
             <div class="card_links">
                 <span>{{card.date}}</span>
-                <span *ngIf="card.link">•</span>
                 <a *ngIf="card.link" target="_blank" [href]="card.link">
                     <span>{{localize.openProject}}</span>
                 </a>
-                <span *ngIf="card.github">•</span>
                 <a *ngIf="card.github" target="_blank" [href]="card.github">
                     <img width="20px" src="../../../../../../assets/images/icons/github-mark.svg">
                 </a>

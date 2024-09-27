@@ -4,11 +4,9 @@
         <h2>{{info.name}}</h2>
         <div class="project_subtitle">
             <span>{{info.date}}</span>
-            <span *ngIf="info.link">•</span>
             <a *ngIf="info.link" target="_blank" [href]="info.link">
                 <span>{{localize.openProject}}</span>
             </a>
-            <span *ngIf="info.github">•</span>
             <a *ngIf="info.github" target="_blank" [href]="info.github">
                 <img width="20px" src="../../../../../../assets/images/icons/github-mark.svg">
             </a>
@@ -16,10 +14,23 @@
     </div>
 
     <div class="project_body">
-        <span>{{info.description}}</span>
-        <img *ngFor="let img of info.imgUrls" [src]="'assets/images/projects/' + img">
+        <div class="project_overview">
+            <h4>{{localize.overview}}</h4>
+            <span>{{info.description}}</span>
+        </div>
+
+        <div class="project_overview" style="gap: 15px" *ngFor="let item of info.overview">
+            <h4>{{item.title}}</h4>
+            <img *ngFor="let img of item.imges" [src]="'assets/images/projects/' + img">
+            <div class="project_overview">
+                <span>{{item.description}}</span>
+                <a>{{item.link}}</a>
+            </div>
+            <div *ngFor="let snippet of item.codeSnippets">
+                <img [src]="'assets/images/projects/' + snippet">
+            </div>
+        </div>
     </div>
 </div>
 
-<app-paging></app-paging>
 <app-scroll-to-top></app-scroll-to-top>

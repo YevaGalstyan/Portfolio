@@ -7,7 +7,6 @@ import {AppComponent} from './app.component';
 import {SharedModule} from './shared/shared.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule} from 'ngx-google-analytics';
-import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
     declarations: [
@@ -21,7 +20,6 @@ import {MatTooltipModule} from '@angular/material/tooltip';
         BrowserAnimationsModule,
         NgxGoogleAnalyticsModule.forRoot('G-V8DGV3G31Z'),
         NgxGoogleAnalyticsRouterModule,
-        MatTooltipModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

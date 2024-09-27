@@ -35,8 +35,27 @@
   .project_body {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 45px;
     margin-top: 32px;
+
+    .project_overview {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    a {
+      font-size: 14px;
+      color: var(--purple-400);
+      text-decoration: underline;
+      font-family: "Nunito-Light Sans";
+    }
+
+    h4 {
+      margin: 0;
+      color: var(--gray-700);
+      font-family: "Nunito-Bold Sans";
+    }
 
     span {
       color: var(--gray-700);

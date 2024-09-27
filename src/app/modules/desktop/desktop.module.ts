@@ -12,7 +12,6 @@ import {ProjectItemComponent} from './components/projects/project-item/project-i
 import {MembershipItemComponent} from './components/memberships/membership-item/membership-item.component';
 import {SharedModule} from '../../shared/shared.module';
 import {ProjectsModule} from './components/projects/projects.module';
-import {MatTooltipModule} from '@angular/material/tooltip';
 import {DesktopComponent} from './desktop.component';
 
 @NgModule({
@@ -32,7 +31,6 @@ import {DesktopComponent} from './desktop.component';
     DesktopRoutingModule,
     SharedModule,
     ProjectsModule,
-    MatTooltipModule
   ]
 })
 export class DesktopModule { }

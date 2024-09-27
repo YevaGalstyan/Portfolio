@@ -1,9 +1,9 @@
 export interface project {
     // Details - inner page
     name?: string
-    date: string
+    date?: string
     link?: string
-    imgUrls?: string[]
+    overview?: projectOverview[]
     description?: string
     github?: string
 
@@ -11,6 +11,14 @@ export interface project {
     cardHeader: string
     cardInfo: string;
     innerPage: boolean
+}
+
+interface projectOverview {
+    title?: string,
+    description?: string,
+    link?: string
+    codeSnippets?: string[],
+    imges?: string[]
 }
 
 export interface position {
