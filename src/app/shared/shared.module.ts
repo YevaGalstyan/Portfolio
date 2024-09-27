@@ -8,7 +8,6 @@ import {FooterComponent} from './footer/footer.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {CardComponent} from './card/card.component';
 import {ScrollToTopComponent} from './scroll-to-top/scroll-to-top.component';
-import {PagingComponent} from './paging/paging.component';
 import {FeedbacksComponent} from './feedbacks/feedbacks.component';
 import { UnderConstructionComponent } from './under-contruction/under-construction.component';
 import { LanguagesComponent } from './languages/languages.component';
@@ -20,7 +19,6 @@ import { LanguagesComponent } from './languages/languages.component';
         FooterComponent,
         CardComponent,
         ScrollToTopComponent,
-        PagingComponent,
         FeedbacksComponent,
         UnderConstructionComponent,
         LanguagesComponent,
@@ -30,7 +28,6 @@ import { LanguagesComponent } from './languages/languages.component';
         FooterComponent,
         CardComponent,
         ScrollToTopComponent,
-        PagingComponent,
         FeedbacksComponent,
         UnderConstructionComponent,
         LanguagesComponent

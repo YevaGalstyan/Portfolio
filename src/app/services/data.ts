@@ -415,7 +415,7 @@ export class DataService {
             date: this.period(2022, this.localize.localize.nov, 2024, this.localize.localize.jan),
             description: this.localize.localize.medControlService,
             imgUrls: ['med.png', 'med3.png', 'med1.png', 'med2.png'],
-            link: 'https://app.med-upravlenie.ru/',
+            // link: 'https://app.med-upravlenie.ru/',
             
             // Outer - card information
             cardHeader: this.localize.localize.medControl,
