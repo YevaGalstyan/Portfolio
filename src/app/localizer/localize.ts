@@ -93,6 +93,10 @@ export interface ILocalize {
     ethicalConsideration: string
     strategicThinking: string
     policyAnalysis: string
+    dataAnalysis: string
+    genAI: string
+    dataMarketing: string
+    dataArtAndDesign: string
 
     // Names
     inSource: string,
@@ -109,6 +113,7 @@ export interface ILocalize {
     fulda: string
     hasselt: string
     alpbach: string
+    tbilisi: string
 
     // Info introductions
     websiteDevelopment: string
@@ -217,6 +222,8 @@ export interface ILocalize {
     eudresBootcamp: string
     transcript: string
     efa: string
+    datafest: string
+    forSet: string
 
     // Months
     jan: string

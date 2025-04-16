@@ -20,7 +20,7 @@ export const localize: ILocalize = {
     educationAndTrainings: 'Recent education and trainings',
     work: 'Work',
     membership: 'Memberships',
-    conferences: 'Conferences, Hackathons and Seminars',
+    conferences: 'Conferences and Seminars',
     contact: 'Contact',
     home: 'Home',
     colophon: 'Colophon',
@@ -97,6 +97,10 @@ export const localize: ILocalize = {
     ethicalConsideration: 'Ethical Consideration',
     strategicThinking: 'Strategic thinking',
     policyAnalysis: 'Policy Analysis',
+    dataAnalysis: 'Data Analysis',
+    genAI: 'Generative AI',
+    dataMarketing: 'Data Marketing',
+    dataArtAndDesign: 'Data Arts & Design',
     
     // Names
     inSource: 'Insource.am',
@@ -113,6 +117,7 @@ export const localize: ILocalize = {
     fulda: 'Fulda, Germany',
     hasselt: 'Hasselt, Belgium',
     alpbach: 'Alpbach, Austria',
+    tbilisi: 'Tbilisi, Georgia',
 
     // Info introductions
     websiteDevelopment: 'This website is developed by Yeva Galstyan.',
@@ -184,7 +189,7 @@ export const localize: ILocalize = {
 
     // Membership
     volunteerExperience: 'Displayed below are comprehensive insights into my volunteering experience, showcasing the various aspects of my involvement and contributions:',
-    conferencesExperience: 'Displayed below find information on the seminars, conferences and hackathons I have attended during my professional and academic career:',
+    conferencesExperience: 'Displayed below find information on the seminars, conferences I have attended outside my professional and academic career:',
     scout: 'Volunteer / Scout',
     agbu: 'AGBU',
     agbuDescription: 'Encompassing photography services for scouting events, writing articles for the monthly scouting magazine, and participating in the management of social media platforms.',
@@ -237,6 +242,8 @@ export const localize: ILocalize = {
     eudresBootcamp: 'E³UDRES² Bootcamp',
     transcript: 'Transcript',
     efa: 'European Forum Alpbach',
+    datafest: 'Datafest Tbilisi',
+    forSet: 'ForSet',
     
     // Months
     jan: 'January',

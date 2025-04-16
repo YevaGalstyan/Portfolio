@@ -25,27 +25,23 @@ export class DataService {
     
     readonly trainings: membership[] = [
         {
-            imgUrl: 'trainings/efa.png',
-            url: 'https://www.alpbach.org/de',
-            positionName: this.localize.localize.efa + ' 2024',
-            period: this.period(2024, this.localize.localize.aug, 2024, this.localize.localize.aug, 18, 30),
-            name: this.localize.localize.efa,
-            location: this.localize.localize.alpbach,
+            imgUrl: 'trainings/datafest.jpeg',
+            url: 'https://www.datafest.ge/',
+            positionName: this.localize.localize.datafest,
+            period: this.period(2024, this.localize.localize.sep, 2024, this.localize.localize.sep, 19, 21),
+            name: this.localize.localize.forSet,
+            location: this.localize.localize.tbilisi,
             skills: [
-                this.localize.localize.strategicThinking,
-                this.localize.localize.policyAnalysis,
-                this.localize.localize.networking,
+                this.localize.localize.dataAnalysis,
+                this.localize.localize.genAI,
+                this.localize.localize.dataMarketing,
+                this.localize.localize.dataArtAndDesign
             ],
-            attachedFiles: [
-                {
-                    fileName: this.localize.localize.attendanceCertificate,
-                    fileLink: 'European_Forum_Alpbach.pdf'
-                },
-            ]
+            attachedFiles: []
         },
         {
             imgUrl: 'trainings/eudres.png',
-            url: 'https://yic.am/',
+            url: 'https://eudres.eu/',
             positionName: this.localize.localize.eudresBootcamp,
             period: this.period(2024, this.localize.localize.jul, 2024, this.localize.localize.jul, 1, 5),
             name: this.localize.localize.eudres,
@@ -85,6 +81,32 @@ export class DataService {
             ]
         },
         {
+            imgUrl: 'conferences/EAP-logo.png',
+            url: 'https://ict.eapcivilsociety.eu/en#',
+            positionName: this.localize.localize.frontEndDeveloper,
+            period: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.jan, 26, 29),
+            name: this.localize.localize.eap,
+            location: this.localize.localize.chisinau,
+            description: this.localize.localize.ysuDescription,
+            skills: [
+                this.localize.localize.managementSkills,
+                this.localize.localize.figma,
+                this.localize.localize.networking,
+                this.localize.localize.publicSpeech,
+            ],
+            links: [
+                {
+                    link: 'https://www.facebook.com/EaPCivilSociety/posts/pfbid02tV6poEVUwZw13iN7e1tLAex1jgPxUaYjXNFbqz7tqGkWKynazy4Dzb3gqQYsoG1El',
+                    icon: 'icons/facebook.png'
+                },
+                {
+                    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7158192162403225601/',
+                    icon: 'icons/linkedin.png'
+                }
+            ],
+            attachedFiles: []
+        },
+        {
             imgUrl: 'trainings/react.png',
             url: 'https://sunnyschool.am/level-up/',
             positionName: this.localize.localize.reactLevelUp,
@@ -109,85 +131,6 @@ export class DataService {
                     fileName: this.localize.localize.attendanceCertificate,
                     fileLink: 'react_level_up_course.pdf'
                 },
-            ]
-        },
-        {
-            imgUrl: 'trainings/erasmus.jpeg',
-            url: 'https://yic.am/',
-            positionName: this.localize.localize.fightFakeNews,
-            period: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.jan, 7, 13),
-            name: this.localize.localize.aisd,
-            location: this.localize.localize.bilbao,
-            skills: [
-                this.localize.localize.erasmusMobility,
-                this.localize.localize.fakeNews,
-                this.localize.localize.nonFormal,
-                this.localize.localize.criticalThinking,
-            ],
-            attachedFiles: [
-                {
-                    fileName: this.localize.localize.attendanceCertificate,
-                    fileLink: 'YouthpassSpain.pdf'
-                }
-            ]
-        },
-        {
-            imgUrl: 'trainings/erasmus.jpeg',
-            url: 'https://yic.am/',
-            positionName: this.localize.localize.lifeAfterMobility,
-            period: this.period(2023, this.localize.localize.nov, 2023, this.localize.localize.nov, 20, 27),
-            name: this.localize.localize.yic,
-            location: this.localize.localize.gyumri,
-            skills: [
-                this.localize.localize.erasmusMobility,
-                this.localize.localize.mentorship,
-                this.localize.localize.coaching,
-                this.localize.localize.nonFormal,
-            ],
-            attachedFiles: [
-                {
-                    fileName: this.localize.localize.attendanceCertificate,
-                    fileLink: 'youthpassGyumri.pdf'
-                }
-            ]
-        },
-        {
-            imgUrl: 'trainings/erasmus.jpeg',
-            url: '',
-            positionName: this.localize.localize.socialTransformation,
-            period: this.period(2022, this.localize.localize.may, 2022, this.localize.localize.may, 7, 13),
-            name: this.localize.localize.mvoProxima,
-            location: this.localize.localize.bakuriani,
-            skills: [
-                this.localize.localize.erasmusMobility,
-                this.localize.localize.conflictSolving,
-                this.localize.localize.coaching,
-                this.localize.localize.leadershipSkills,
-            ],
-            attachedFiles: [
-                {
-                    fileName: this.localize.localize.attendanceCertificate,
-                    fileLink: 'YouthpassGeorgia.pdf'
-                }
-            ]
-        },
-        {
-            imgUrl: 'trainings/ysuSC.png',
-            url: 'https://www.facebook.com/YSUSC',
-            positionName: this.localize.localize.selfManagementProgram,
-            period: this.period(2020, this.localize.localize.feb, 2020, this.localize.localize.mar, 28, 3),
-            name: this.localize.localize.ysuSC,
-            location: this.localize.localize.yerevan,
-            skills: [
-                this.localize.localize.teamWork,
-                this.localize.localize.leadershipSkills,
-                this.localize.localize.conflictResolution,
-            ],
-            attachedFiles: [
-                {
-                    fileName: this.localize.localize.attendanceCertificate,
-                    fileLink: 'certificate_self_management.pdf'
-                }
             ]
         },
         {
@@ -331,30 +274,102 @@ export class DataService {
     
     readonly conferences: membership[] = [
         {
-            imgUrl: 'conferences/EAP-logo.png',
-            url: 'https://ict.eapcivilsociety.eu/en#',
-            positionName: this.localize.localize.frontEndDeveloper,
-            period: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.jan, 26, 29),
-            name: this.localize.localize.eap,
-            location: this.localize.localize.chisinau,
-            description: this.localize.localize.ysuDescription,
+            imgUrl: 'trainings/efa.png',
+            url: 'https://www.alpbach.org/de',
+            positionName: this.localize.localize.efa + ' 2024',
+            period: this.period(2024, this.localize.localize.aug, 2024, this.localize.localize.aug, 18, 30),
+            name: this.localize.localize.efa,
+            location: this.localize.localize.alpbach,
             skills: [
-                this.localize.localize.managementSkills,
-                this.localize.localize.figma,
+                this.localize.localize.strategicThinking,
+                this.localize.localize.policyAnalysis,
                 this.localize.localize.networking,
-                this.localize.localize.publicSpeech,
             ],
-            links: [
+            attachedFiles: [
                 {
-                    link: 'https://www.facebook.com/EaPCivilSociety/posts/pfbid02tV6poEVUwZw13iN7e1tLAex1jgPxUaYjXNFbqz7tqGkWKynazy4Dzb3gqQYsoG1El',
-                    icon: 'icons/facebook.png'
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'European_Forum_Alpbach.pdf'
                 },
-                {
-                    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7158192162403225601/',
-                    icon: 'icons/linkedin.png'
-                }
+            ]
+        },
+        {
+            imgUrl: 'trainings/erasmus.jpeg',
+            url: '',
+            positionName: this.localize.localize.fightFakeNews,
+            period: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.jan, 7, 13),
+            name: this.localize.localize.aisd,
+            location: this.localize.localize.bilbao,
+            skills: [
+                this.localize.localize.erasmusMobility,
+                this.localize.localize.fakeNews,
+                this.localize.localize.nonFormal,
+                this.localize.localize.criticalThinking,
             ],
-            attachedFiles: []
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'YouthpassSpain.pdf'
+                }
+            ]
+        },
+        {
+            imgUrl: 'trainings/erasmus.jpeg',
+            url: 'https://yic.am/',
+            positionName: this.localize.localize.lifeAfterMobility,
+            period: this.period(2023, this.localize.localize.nov, 2023, this.localize.localize.nov, 20, 27),
+            name: this.localize.localize.yic,
+            location: this.localize.localize.gyumri,
+            skills: [
+                this.localize.localize.erasmusMobility,
+                this.localize.localize.mentorship,
+                this.localize.localize.coaching,
+                this.localize.localize.nonFormal,
+            ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'youthpassGyumri.pdf'
+                }
+            ]
+        },
+        {
+            imgUrl: 'trainings/erasmus.jpeg',
+            url: '',
+            positionName: this.localize.localize.socialTransformation,
+            period: this.period(2022, this.localize.localize.may, 2022, this.localize.localize.may, 7, 13),
+            name: this.localize.localize.mvoProxima,
+            location: this.localize.localize.bakuriani,
+            skills: [
+                this.localize.localize.erasmusMobility,
+                this.localize.localize.conflictSolving,
+                this.localize.localize.coaching,
+                this.localize.localize.leadershipSkills,
+            ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'YouthpassGeorgia.pdf'
+                }
+            ]
+        },
+        {
+            imgUrl: 'trainings/ysuSC.png',
+            url: 'https://www.facebook.com/YSUSC',
+            positionName: this.localize.localize.selfManagementProgram,
+            period: this.period(2020, this.localize.localize.feb, 2020, this.localize.localize.mar, 28, 3),
+            name: this.localize.localize.ysuSC,
+            location: this.localize.localize.yerevan,
+            skills: [
+                this.localize.localize.teamWork,
+                this.localize.localize.leadershipSkills,
+                this.localize.localize.conflictResolution,
+            ],
+            attachedFiles: [
+                {
+                    fileName: this.localize.localize.attendanceCertificate,
+                    fileLink: 'certificate_self_management.pdf'
+                }
+            ]
         },
     ]
     
