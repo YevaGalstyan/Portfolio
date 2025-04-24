@@ -28,7 +28,7 @@ export interface position {
     location: string
     description: string
     skills: string[]
-    url: string
+    url?: string
 }
 
 export interface feedback {
