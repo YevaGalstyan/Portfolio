@@ -59,7 +59,10 @@ export const localize: ILocalize = {
     // Tools
     angular: 'Angular ',
     angularJs: 'AngularJS',
+    react: 'React',
     typescript: 'Typescript',
+    antDesign: 'Ant Design',
+    reactFlow: 'React Flow',
     javascript: 'Javascript',
     jquery: 'JQuery',
     scss: 'SCSS',
@@ -103,12 +106,14 @@ export const localize: ILocalize = {
     dataArtAndDesign: 'Data Arts & Design',
     
     // Names
+    basf: 'BASF',
     inSource: 'Insource.am',
     technamin: 'Technamin',
     imperialCapital: 'Trading platform',
     medControl: 'Med Control',
     eCommerceApp: 'E-commerce application',
     yerevan: 'Yerevan, Armenia',
+    ludwigshafen: 'Ludwigshafen, Germany (Remote)',
     chisinau: 'Chisinau, Moldova',
     bakuriani: 'Bakuriani, Georgia',
     aveiro: 'Aveiro, Portugal',
@@ -141,6 +146,7 @@ export const localize: ILocalize = {
     workExperience: 'Here is a detailed overview of my professional background and ',
     independentProject: 'independent projects',
     mid: 'Mid Front-end Engineer',
+    workingStudent: 'Front-end Engineer (Working Student)',
     junior: 'Strong Junior Front-End Engineer',
     providingSupportInSource: 'Providing support for a pre-existing administrative panels for an online banking customer support team. Developing an accounting application specifically designed for the online banking accounting team.',
     providingSupportTechnamin: 'Managing the upkeep of an online gaming platform and designing an administrative dashboard for gaming staff members.',
@@ -179,13 +185,14 @@ export const localize: ILocalize = {
     
     // About
     IAmYevaGalstyan: 'Hi, I’m Yeva.',
-    myOccupation: 'I am a master\'s student in Global Software Development at Hochschule Fulda, Germany, ' +
-        'with a strong foundation in software engineering and a passion for creating Front-End solutions ' +
-        'for high-volume platforms. Feel free to explore my educational and professional background' +
-        ' through my portfolio.',
+    myOccupation: 'I am a master\'s student in Global Software Development at Hochschule Fulda, Germany and a ' +
+        'working student front-end developer in BASF with a strong foundation in software engineering ' +
+        'and a passion for creating Front-End solutions for high-volume platforms. ' +
+        'Feel free to explore my educational and professional background through my portfolio.',
     proceedToWorkPage: 'To gain further insight into my work experience and independent projects, kindly proceed to the ',
     toGainInformation: '  page for detailed information.',
     proceedToEducationPage: 'To gain further insight into my educational and trainings background, kindly proceed to the ',
+    proceedToMembershipPage: 'To gain further insight into my membership and seminar background, kindly proceed to the ',
 
     // Membership
     volunteerExperience: 'Displayed below are comprehensive insights into my volunteering experience, showcasing the various aspects of my involvement and contributions:',
@@ -195,6 +202,7 @@ export const localize: ILocalize = {
     agbuDescription: 'Encompassing photography services for scouting events, writing articles for the monthly scouting magazine, and participating in the management of social media platforms.',
     ysuIAMSC: 'YSU IAM Student Council',
     eap: 'EaP Civil Society Facility',
+    eapHackathon: '2024 EaP Civic Tech Hackathon',
     ysuSC: 'YSU Student Council',
     mediaHead: 'Head of the media committee',
     frontEndDeveloper: 'Front-end developer',

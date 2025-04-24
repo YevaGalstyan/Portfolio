@@ -25,21 +25,6 @@ export class DataService {
     
     readonly trainings: membership[] = [
         {
-            imgUrl: 'trainings/datafest.jpeg',
-            url: 'https://www.datafest.ge/',
-            positionName: this.localize.localize.datafest,
-            period: this.period(2024, this.localize.localize.sep, 2024, this.localize.localize.sep, 19, 21),
-            name: this.localize.localize.forSet,
-            location: this.localize.localize.tbilisi,
-            skills: [
-                this.localize.localize.dataAnalysis,
-                this.localize.localize.genAI,
-                this.localize.localize.dataMarketing,
-                this.localize.localize.dataArtAndDesign
-            ],
-            attachedFiles: []
-        },
-        {
             imgUrl: 'trainings/eudres.png',
             url: 'https://eudres.eu/',
             positionName: this.localize.localize.eudresBootcamp,
@@ -53,14 +38,16 @@ export class DataService {
             ],
             attachedFiles: [
                 {
-                    fileName: this.localize.localize.attendanceCertificate,
-                    fileLink: 'bootcamp_eudres.pdf'
-                },
-                // {
-                //     fileName: this.localize.localize.transcript,
-                //     fileLink: 'hasselt_transcript.pdf'
-                // }
-            ]
+                    fileName: this.localize.localize.transcript,
+                    fileLink: 'hasselt_transcript.pdf'
+                }
+            ],
+            links: [
+                {
+                    link: 'https://www.linkedin.com/posts/yeva-galstyan_innovation-teamwork-technology-activity-7246454989986967552-sito?utm_source=share&utm_medium=member_desktop&rcm=ACoAADShaccBhvY2kR1BcRxC1iDRLXwvDwarCiI',
+                    icon: 'icons/linkedin.png'
+                }
+            ],
         },
         {
             imgUrl: 'trainings/dataArt.png',
@@ -83,11 +70,11 @@ export class DataService {
         {
             imgUrl: 'conferences/EAP-logo.png',
             url: 'https://ict.eapcivilsociety.eu/en#',
-            positionName: this.localize.localize.frontEndDeveloper,
+            positionName: this.localize.localize.eapHackathon,
             period: this.period(2024, this.localize.localize.jan, 2024, this.localize.localize.jan, 26, 29),
             name: this.localize.localize.eap,
             location: this.localize.localize.chisinau,
-            description: this.localize.localize.ysuDescription,
+            description: '',
             skills: [
                 this.localize.localize.managementSkills,
                 this.localize.localize.figma,
@@ -216,7 +203,7 @@ export class DataService {
             imgUrl: 'memberships/notion.png',
             url: 'https://www.notion.so/notion/Notion-Community-04f306fbf59a413fae15f42e2a1ab029',
             positionName: this.localize.localize.notionCampusLeader,
-            period: this.period(2024, this.localize.localize.may),
+            period: this.period(2024, this.localize.localize.may, 2024, this.localize.localize.sep),
             name: this.localize.localize.notion,
             location: this.localize.localize.fulda,
             description: this.localize.localize.notionDescription,
@@ -273,6 +260,26 @@ export class DataService {
     ]
     
     readonly conferences: membership[] = [
+        {
+            imgUrl: 'trainings/datafest.jpeg',
+            url: 'https://www.datafest.ge/',
+            positionName: this.localize.localize.datafest,
+            period: this.period(2024, this.localize.localize.sep, 2024, this.localize.localize.sep, 19, 21),
+            name: this.localize.localize.forSet,
+            location: this.localize.localize.tbilisi,
+            skills: [
+                this.localize.localize.dataAnalysis,
+                this.localize.localize.genAI,
+                this.localize.localize.dataMarketing,
+                this.localize.localize.dataArtAndDesign
+            ],
+            links: [
+                {
+                    icon: 'icons/linkedin.png',
+                    link: 'https://www.linkedin.com/posts/yeva-galstyan_datafesttbilisi2024-dataconference-innovation-activity-7244462692516659200-jxfj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADShaccBhvY2kR1BcRxC1iDRLXwvDwarCiI'
+                }
+            ]
+        },
         {
             imgUrl: 'trainings/efa.png',
             url: 'https://www.alpbach.org/de',
@@ -384,11 +391,26 @@ export class DataService {
     
     readonly positions: position[] = [
         {
+            positionName: this.localize.localize.workingStudent,
+            companyName: this.localize.localize.basf,
+            location: this.localize.localize.ludwigshafen,
+            description: '',
+            period: this.period(2024, this.localize.localize.nov),
+            skills: [
+                this.localize.localize.react,
+                this.localize.localize.typescript,
+                this.localize.localize.antDesign,
+                this.localize.localize.reactFlow,
+                this.localize.localize.scss
+            ]
+        },
+        
+        {
             positionName: this.localize.localize.mid,
             companyName: this.localize.localize.inSource,
             location: this.localize.localize.yerevan,
-            description: this.localize.localize.providingSupportInSource,
-            url: 'https://www.linkedin.com/company/insourceam/mycompany/',
+            description: '',
+            period: this.period(2021, this.localize.localize.oct, 2024, this.localize.localize.oct),
             skills: [
                 this.localize.localize.angular,
                 this.localize.localize.typescript,
@@ -402,8 +424,7 @@ export class DataService {
             period: this.period(2020, this.localize.localize.nov, 2021, this.localize.localize.oct),
             companyName: this.localize.localize.technamin,
             location: this.localize.localize.yerevan,
-            description: this.localize.localize.providingSupportTechnamin,
-            url: 'https://technamin.com/',
+            description: '',
             skills: [
                 this.localize.localize.angularJs,
                 this.localize.localize.javascript,

@@ -34,6 +34,22 @@
 
     </div>
 
+    <!--Professional experience -->
+    <div class="body_block">
+
+        <div class="body_header">
+            <h4>{{localize.localize.professionalExperience}}</h4>
+            <span>{{localize.localize.proceedToWorkPage}}
+                <a routerLink="/work"><span>{{localize.localize.work}}</span></a>
+                <span>{{localize.localize.toGainInformation}}</span>
+            </span>
+        </div>
+
+        <app-position-item
+                *ngFor="let position of dataService.positions | slice: 0: 1"
+                [position]="position"/>
+    </div>
+
     <!--Education -->
     <div style="margin-top: 20px" class="body_block">
 
@@ -54,20 +70,20 @@
                 [membership]="training"/>
     </div>
 
-    <!--Professional experience -->
-    <div class="body_block">
+    <!--Education -->
+    <div style="margin-top: 20px" class="body_block">
 
         <div class="body_header">
-            <h4>{{localize.localize.professionalExperience}}</h4>
-            <span>{{localize.localize.proceedToWorkPage}}
-                <a routerLink="/work"><span>{{localize.localize.work}}</span></a>
+            <h4>{{localize.localize.conferences}}</h4>
+            <span>{{localize.localize.proceedToMembershipPage}}
+                <a routerLink="/education"><span>{{localize.localize.membership}}</span></a>
                 <span>{{localize.localize.toGainInformation}}</span>
             </span>
         </div>
 
-        <app-position-item
-                *ngFor="let position of dataService.positions | slice: 0: 1"
-                [position]="position"/>
+        <app-membership-item
+                *ngFor="let training of dataService.conferences | slice: 0: 2"
+                [membership]="training"/>
     </div>
 
     <!--Recent project-->
@@ -82,7 +98,7 @@
 
         <div class="card_block">
             <app-card
-                    *ngFor="let item of dataService.projectsDetails | slice:0:2; let i=index"
+                    *ngFor="let item of dataService.projectsDetails | slice:0:1; let i=index"
                     [card]="item"
                     (cardClicked)="generalService.navigate('work/' + (i+1))"/>
         </div>

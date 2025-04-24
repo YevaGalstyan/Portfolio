@@ -57,7 +57,10 @@ export interface ILocalize {
     angularJs: string
     javascript: string
     jquery: string
+    react: string
     typescript: string
+    antDesign: string
+    reactFlow: string
     vercel: string
     scss: string
     html: string
@@ -99,6 +102,7 @@ export interface ILocalize {
     dataArtAndDesign: string
 
     // Names
+    basf: string,
     inSource: string,
     technamin: string
     imperialCapital: string
@@ -106,6 +110,7 @@ export interface ILocalize {
     eCommerceApp: string
     bakuriani: string
     yerevan: string
+    ludwigshafen: string
     chisinau: string
     aveiro: string
     gyumri: string
@@ -136,6 +141,7 @@ export interface ILocalize {
     // Work
     workExperience: string
     independentProject: string
+    workingStudent: string
     mid: string
     junior: string
     providingSupportInSource: string
@@ -170,6 +176,7 @@ export interface ILocalize {
     proceedToWorkPage: string
     toGainInformation: string
     proceedToEducationPage: string
+    proceedToMembershipPage: string
 
     // Membership
     volunteerExperience: string
@@ -179,6 +186,7 @@ export interface ILocalize {
     agbuDescription: string
     ysuIAMSC: string
     eap: string
+    eapHackathon: string
     ysuSC: string
     mediaHead: string
     frontEndDeveloper: string
